@@ -1,0 +1,140 @@
+/*整體外部排版*/
+
+
+.breadListP {
+  display: flex;
+  gap: 5px;
+}
+
+.breadListP p {
+  font-size: 16px;
+}
+.breadListP a {
+  color: #7f7f7f;
+  text-decoration: none;
+}
+.arrowarooo {
+  color: #7f7f7f;
+}
+/* .arrowarooo {
+  color: #7f7f7f;
+} */
+
+.classButtonStore {
+  background-color: #00a0f0;
+  color: white;
+  width: 300px;
+  height: 60px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.classButtonStore p {
+  font-size: 25px;
+}
+
+.storesInputMap {
+  width: 280px;
+  height: 55px;
+  border-radius: 10px;
+  border-color: #c0c9d0;
+  font-size: 18px;
+  font-family: "GenSenRounded JP", sans-serif;
+  text-align: center;
+}
+
+.storesInputMap::placeholder {
+  color: #c0c9d0;
+}
+
+/*取消選定外框*/
+.storesInputMap:focus,
+.selectClass:focus {
+  outline: 0;
+}
+
+.searchIconStores {
+  width: 94px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: #00a0f0;
+  border: 1px solid #00a0f0;
+  cursor: pointer;
+}
+
+.selectAndInputAroundTT {
+  display: flex;
+  justify-content: center;
+}
+.selectAndInputAround {
+  border-top: 2px solid #00a0f0;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.pageIII {
+  width: 90vw;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.useGapForSearch {
+  display: flex;
+  gap: 20px;
+}
+
+/*卡片整體修改*/
+.cardPosition {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px;
+}
+
+/*上下分頁修改*/
+.resetPagination {
+}
+
+@media screen and (max-width: 900px) {
+  .classButtonStore {
+    display: none;
+  }
+
+  /* .selectAndInputAroundTT {
+    display: flex;
+    justify-content: center;
+  } */
+  .selectAndInputAround {
+    border-top: 0;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .selectAll {
+    display: flex;
+    flex-direction: column;
+  }
+  select.selectClass,
+  .searchIconStores {
+    width: 280px;
+    height: 60px;
+  }
+  .useGapForSearch {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardPosition {
+    width: 100vw;
+    margin: auto;
+    margin-top: 30px;
+  }
+}

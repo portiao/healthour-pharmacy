@@ -1,0 +1,102 @@
+.bgColorProduct{
+    width: 100%;
+    height: 730px;
+    background-color: #EEF7FC;
+    padding-top: 20px;
+}
+
+/* -熱門商品- */
+.text-divider1{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    color: black;
+    --text-divider-gap: 1rem;
+    justify-content: center;
+}
+.text-divider1::before,
+.text-divider1::after{
+    content: '';
+    height: 1px;
+    background-color: #C4C4C4;
+    width: 318px;
+}
+.text-divider1::before {
+    margin-right: var(--text-divider-gap);
+}
+  .text-divider1::after {
+    margin-left: var(--text-divider-gap);
+}
+
+
+/*雲動畫*/
+@keyframes cloud {
+    0%{
+        background-position-x:  0rem;
+    }
+    100%{
+        background-position-x:  -250rem;
+    }
+    
+}
+
+.cloud-1{
+    position: relative;
+    bottom: 130px;
+    right: 0;
+    left: 0;
+    height: 18rem;
+    background-size: 250rem 18rem;
+    /*infinite 動畫一直撥放*/
+    animation: cloud 10s linear infinite;
+    opacity: .6;
+    height: 20rem;
+    background-size: reverse;
+    animation-duration: 10s;
+}
+.cloud-2{
+    position: relative;
+    bottom: 320px;
+    right: 0;
+    left: 0;
+    height: 18rem;
+    background-size: 250rem 18rem;
+    /*infinite 動畫一直撥放*/
+    animation: cloud 10s linear infinite;
+    opacity: .8;
+    height: 20rem;
+    background-size: cover;
+    animation-duration: 13s;
+}
+
+
+
+
+
+
+
+
+@media  screen and (max-width:375px) {
+    /* -熱門商品- */
+    .text-divider1{
+        font-size: 28px;
+    }
+    .text-divider1::before,
+    .text-divider1::after{
+        width: 100px;
+    }
+   
+}
+
+
+
+
+
+/*因為跟柏俞用同一個輪播牆，因此要更改*/
+.SliderP div button {
+    display: none !important;
+}
+
+.portiaMove{
+    display: flex;
+}

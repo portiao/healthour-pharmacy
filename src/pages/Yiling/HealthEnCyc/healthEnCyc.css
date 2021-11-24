@@ -1,0 +1,130 @@
+.healthQPic {
+  width: 100%;
+  max-height: 400px;
+}
+
+/* 麵包屑 */
+.breadListHealth {
+  display: flex;
+  gap: 5px;
+  /* width: 90vw; */
+}
+.breadListHealth p {
+  font-size: 16px;
+  display: flex;
+}
+.breadListHealth a {
+  color: #7f7f7f;
+  text-decoration: none;
+}
+.arrowHealth {
+  color: #7f7f7f;
+}
+
+/*側邊選單*/
+.healthKnowledge {
+  font-size: 25px;
+  color: #00a0f0;
+  font-weight: bold;
+  /* margin-top: 10px; */
+}
+
+.healthLineP {
+  width: 5px;
+  height: 25px;
+  background-color: #66cbff;
+  margin-left: 2px;
+}
+
+.healthLineAndKnowledge {
+  display: flex;
+  gap: 20px;
+  background-color: #eef7fc;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px 0;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.healthAllCate {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+
+.healthArrowP {
+  display: flex;
+  width: 200px;
+  height: 64px;
+  justify-content: space-evenly;
+  gap: 30px;
+  border-bottom: 1px solid #c0c9d0;
+  align-items: center;
+}
+
+.breadWithCate {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.classButtonHealth {
+  background-color: #00a0f0;
+  color: white;
+  width: 300px;
+  height: 60px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.classButtonHealth p {
+  font-size: 25px;
+}
+
+/* 標題與保健百科 */
+.allClassButtonHealth {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.lineTopForTitle {
+  border-top: 2px solid #00a0f0;
+  padding-top: 95px;
+}
+
+/* 左側+右側欄全部 */
+.rightSideAll {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 25px;
+}
+
+@media screen and (max-width: 765px) {
+  .healthLineAndKnowledge,
+  .healthAllCate,
+  .classButtonHealth {
+    display: none;
+  }
+  .rightSideAll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .lineTopForTitle {
+    border-top: none;
+    padding-top: 25px;
+  }
+  .allClassButtonHealth{
+    width: 100%;
+  }
+
+  
+}

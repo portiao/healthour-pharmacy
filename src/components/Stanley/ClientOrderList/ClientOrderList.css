@@ -1,0 +1,48 @@
+/* =========== 以下正式css ================================= */
+.order-list-box {
+  width: 100%;
+  background-color: #eef7fc;
+  border-radius: 20px;
+  padding: 25px 50px;
+  margin-top: 50px;
+}
+
+.list-title {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.list-content {
+  font-size: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #b2b6b8;
+}
+.check-detail{
+  color: #00a0f0;
+}
+
+@media screen and (max-width: 376px) {
+  .order-list-box {
+    width: 100%;
+    background-color: #eef7fc;
+    border-radius: 10px;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .list-content {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 15px;
+    border-bottom: 1px solid #b2b6b8;
+  }
+
+  /* .list-content:nth-last-child(1) {
+    border-bottom: none;
+  } */
+  .red-word {
+    color: red;
+  }
+}

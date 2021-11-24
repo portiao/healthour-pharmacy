@@ -1,0 +1,137 @@
+.navbarDesTop {
+  width: 100%;
+  height: auto;
+  min-height: 120px;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  position: fixed;
+  z-index: 9999;
+  font-size: 18px;
+}
+
+.homeIconLogo {
+  display: flex;
+  align-items: center;
+}
+
+.homeIconLogo img {
+  object-fit: contain;
+}
+
+.navbarLinkDesTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.navbarLinkDesTop1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbarLinkDesTop1 > a {
+  margin-right: 59px;
+}
+
+.positionIconA {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.positionIconA p {
+  margin-bottom: 0;
+}
+.navbarLinkDesTop2 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.navbarAllIcon {
+  display: flex;
+  gap: 20px;
+}
+.navbarIconLine1 {
+  padding: 0 40px;
+  border-right: 1px solid black;
+}
+
+.navbarIconLineAbouts {
+  margin-left: 40px;
+}
+
+/*把navbar加入白色底*/
+.navbarAll {
+  background-color: white;
+  width: 100%;
+  height: 120px;
+}
+
+/*navbar彈跳視窗定位*/
+.buttonAndIconPush {
+  position: fixed;
+  background-color: #eef7fc;
+  width: 100%;
+  height: 500px;
+  top: 120px;
+  right: 0%;
+  z-index: 999;
+  padding: 50px 195px 40px 0;
+}
+
+/*半圓*/
+.forCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.halfCircleMove {
+  max-width: 28px;
+  width: 100%;
+  position: relative;
+  top: 33px;
+}
+
+/*藍點隱藏呼叫*/
+.hideClass {
+  opacity: 0;
+}
+
+/*a連結格式設定*/
+.navChandePageEnc {
+  text-decoration: none;
+  color: black;
+}
+
+/* 購物車數量 */
+.cart-count-box {
+  position: relative;
+}
+.cart-count {
+  position: absolute;
+  width: 22px;
+  height: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #1e9ddd;
+  bottom: 7px;
+  left: 8px;
+}
+
+@media screen and (max-width: 900px) {
+  .navbarAll {
+    display: none;
+  }
+}
+
+/*當解析度超過2000px時,放上手機板 導覽列 ,因此這邊桌機版消失*/
+@media screen and (min-width: 2000px) {
+  .navbarAll {
+    display: none;
+  }
+}

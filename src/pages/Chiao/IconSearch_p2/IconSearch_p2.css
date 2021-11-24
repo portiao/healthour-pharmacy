@@ -1,0 +1,171 @@
+*{
+  text-decoration: none;
+}
+
+.chiao-container{
+  display: flex;
+  max-width: 1390px;
+  margin: auto;
+  /* margin: 15px; */
+}
+
+.icon-btn2{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  color:#00A0F0;
+}
+
+
+
+/* icon */        
+.icon-bd img{
+  width: 90%;
+  
+}
+
+.icon-bd-left img{
+ width: 15%;
+ 
+}
+
+.icon-bd-left{
+ margin:10px;
+ line-height: 60px;
+
+}
+
+.icon-bd-left1,
+.icon-bd-right2{
+  color:#00A0F0;
+}
+
+.icon-bd-right img{
+ width: 15%;
+  
+}
+
+.icon-bd-right{
+ text-align: right;
+ margin:10px;
+ line-height: 60px;
+}
+
+.icon-bd-right li img{
+  margin-bottom: -15px;
+  margin-right: 20px;
+}
+
+.icon-bd-left li img{
+  margin-bottom: -15px;
+  margin-right: 20px;
+}
+
+
+
+/* icon */
+
+
+/* box */
+.box1{
+  display:flex;
+  margin-top: 25px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box-left{
+  background-color: #66CBFF;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.box-left p{
+  color: #fff;
+  font-size: 20px;
+  /* width: 100%; */
+  margin-bottom: 0;
+} 
+
+
+
+.box-right{
+  background-color: #EEF7FC;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+  word-wrap:break-word;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.box-right p{
+  font-size: 18px; 
+  letter-spacing:1px;
+  line-height: 20px;
+}
+
+.search-btn{
+  background-color: #00A0F0;
+  color:#fff;
+  margin: 10px;
+  padding: 15px 15px;
+  border-radius: 10px;
+  border-style: none;
+  float: right;
+  margin-top: 25px;
+}
+/* box */
+
+.side-menu-2{
+  width: 30%;
+  margin: 50px 150px 0 0;
+}
+
+
+@media  screen and (max-width:992px) {
+
+  .chiao-container{
+    margin: 15px ;
+  }
+
+  .side-menu-2 {
+    width: 0;
+    margin: 50px 0 0 0;
+  }
+
+  .box1{
+    margin: auto;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .icon-bd{
+    line-height: 100px;
+    margin: auto;
+    width: 50%;
+  }
+
+  .icon-bd-left1 img{
+    display: none;
+  }
+
+  .icon-bd-right img{
+    display: none;
+  }
+
+  .icon-bd-left{
+    margin: 0 0 0 20px;
+  }
+
+  .icon-bd-right{
+    margin: 0 20px 0 0;
+  }
+
+}

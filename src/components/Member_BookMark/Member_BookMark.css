@@ -1,0 +1,162 @@
+
+.Member-bookMark-title {
+  position: relative;
+  left: 20%;
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+@media (max-width: 375px) {
+  .Member-bookMark-title  {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 27%;
+
+  }
+}
+.Member-bookMark {
+  margin: 0 auto;
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 6px solid #00a0f0;
+  margin-bottom: 35px;
+}
+
+/* 電腦選單條樣式 + 手機目前選中的選單樣式 */
+.Member-bookMark .option-list-computer .option a,
+.Member-bookMark .option-mobile-now div {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  width: 273px;
+  height: 40px;
+  line-height: 42px;
+  background-color: #00a0f0;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+/* 手機 option為隱藏狀態 只有添加show的才顯示 */
+.Member-bookMark .option-mobile-now div {
+  display: none;
+}
+
+/* 點擊後顯示 */
+.Member-bookMark .option-mobile-now div.show {
+  display: inline-block;
+}
+
+/* 手機 ...圖示 */
+.Member-bookMark .icon {
+  display: block;
+  position: relative;
+  width: 45px;
+  height: 9px;
+  margin: 5px 0px;
+}
+
+/* 手機 選單條 */
+.Member-bookMark .option-list-mobile {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  right: 50%;
+  transform: translate(32px);
+  width: 345px;
+  z-index: 10;
+}
+
+/* 點擊icon 開啟手機option-list */
+.Member-bookMark .option-list-mobile.show {
+  display: block;
+}
+
+/* 選單條按鈕樣式 */
+.Member-bookMark .option-list-mobile .option a {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  background-color: #66cbff;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* 手機 option-list最後一個不加mb */
+.Member-bookMark .option-list-mobile .option:last-child a {
+  margin-bottom: 0;
+}
+
+/* 關閉電腦版選單條 */
+.Member-bookMark .option-list-computer {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  /* 關閉手機現在顯示的頁簽 */
+  .Member-bookMark .option-mobile-now {
+    display: none;
+  }
+
+  /* 關閉icon */
+  .Member-bookMark .icon {
+    display: none;
+  }
+
+  /* 開啟電腦版頁簽 */
+  .Member-bookMark .option-list-computer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* 電腦選單條個別寬度 */
+  .Member-bookMark .option-list-computer .option {
+    /* width: calc(20% - 10px); */
+    width: 345px;
+  }
+
+  /* 電腦選單條個別寬度(繼承) + 樣式 */
+  .Member-bookMark .option-list-computer .option a {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #66cbff;
+    text-decoration: none;
+  }
+
+  /* 電腦選單條 點擊後添加now變色 */
+  .Member-bookMark .option-list-computer .option a.now {
+    background-color: #00a0f0;
+  }
+}
+
+@media (max-width: 375px) {
+  /*手機板-整體大小與位置*/
+  .Member-bookMark {
+    width: 307px;
+    position: relative;
+  }
+  /*手機板-被選中的連結大小*/
+  .Member-bookMark .option-mobile-now div.show {
+    width: 247px;
+  }
+
+  /*手機板-隱藏選單的大小與位置跟連結去底線*/
+  .Member-bookMark .option-list-mobile .option a {
+    width: 247px;
+    margin-left: 95px;
+    text-decoration: none;
+  }
+
+    /*手機板-右邊三個點點*/
+  .Member-bookMark-mobile-icon{
+    margin-top: 11px;
+  }
+}

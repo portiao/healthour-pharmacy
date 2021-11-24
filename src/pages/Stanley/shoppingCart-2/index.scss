@@ -1,0 +1,505 @@
+.SC2 {
+  /* 共用元件CSS */
+  input {
+    box-sizing: border-box;
+    height: 65px;
+    width: 100%;
+    border: 2px solid #eae8e8;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+
+  select {
+    box-sizing: border-box;
+    width: 100%;
+    height: 65px;
+    border: 1px solid #aaa8a8;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .order-info-detail label,
+  .receiver-info-box label {
+    margin-bottom: 10px;
+  }
+
+  /* 訂購人資訊 */
+  .order-info-box {
+    width: 940px;
+    outline: 1px solid #ecebeb;
+    margin: auto;
+    margin-bottom: 35px;
+  }
+
+  .order-info-title {
+    width: 100%;
+    height: 70px;
+    background-color: #ecebeb;
+    font-size: 30px;
+    line-height: 70px;
+    padding-left: 25px;
+  }
+
+  .order-info-detail {
+    padding: 25px;
+    font-size: 20px;
+  }
+
+  /* 控制最後一個跟下方邊界的距離 */
+  .email-input {
+    margin-bottom: 0px;
+  }
+
+  /* 收件人資訊 */
+  .receiver-info-box {
+    width: 940px;
+    margin: auto;
+    outline: 1px solid #ecebeb;
+    margin-bottom: 35px;
+  }
+
+  .receiver-title {
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+    line-height: 70px;
+    background-color: #ecebeb;
+    padding-left: 25px;
+  }
+
+  .recevier-detail-box {
+    padding: 25px;
+    font-size: 20px;
+  }
+
+  /* 同訂購人按鈕 */
+  input:nth-child(1) {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+  }
+
+  .same-person-btn label {
+    margin-bottom: 0px;
+  }
+
+  /* 超商取貨 */
+  .convenience-store-box {
+    padding: 0 25px;
+  }
+  .convenience-store-box .title {
+    font-size: 24px;
+    font-weight: bolder;
+    padding-bottom: 7px;
+    border-bottom: 1px solid black;
+  }
+
+  .store-select-area {
+    width: 100%;
+    height: 400px;
+    padding: 25px 0;
+  }
+
+  .store-select-area select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .store-info-box {
+    outline: 1px solid #aaa8a8;
+    border-radius: 5px;
+    padding: 15px;
+    height: 220px;
+    margin-bottom: 30px;
+  }
+
+  .store-info {
+    background-color: #d5e8f1;
+    // width: 260px;
+    height: 70px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .storeActive {
+    background-color: #83cef3;
+  }
+
+  .store-name {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+  }
+
+  .store-address {
+    font-size: 16px;
+  }
+
+  /* 超取選擇、確認按鈕 */
+  .re-select-btn {
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  .confirm-btn {
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #aad7ee;
+    font-size: 18px;
+  }
+
+  .order-note-box {
+    padding: 0 25px;
+  }
+
+  .note-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .note-content {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #aaa8a8;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  /* 付款資訊 */
+  .payment-box {
+    width: 940px;
+    outline: 1px solid #ecebeb;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .payment-title {
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+    line-height: 70px;
+    background-color: #ecebeb;
+    padding-left: 25px;
+  }
+
+  .payment-info-box {
+    width: 100%;
+    padding: 25px;
+    font-size: 20px;
+  }
+
+  .submit-order-box {
+    width: 940px;
+    margin: auto;
+    height: 200px;
+    outline: 1px solid #ecebeb;
+  }
+
+  .agree-box {
+    padding: 25px;
+    border-bottom: 1px solid #ecebeb;
+  }
+  .agree-box > label {
+    height: 20px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .submit-box {
+    padding: 25px;
+  }
+  .btn-group {
+    font-size: 20px;
+    color: #00a0f0;
+  }
+
+  .checkout-btn {
+    height: 60px;
+    width: 400px;
+    background-color: #00a0f0d8;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 60px;
+    font-weight: bolder;
+  }
+  .checkout-btn:hover {
+    background-color: #00a0f0;
+  }
+
+  .error {
+    box-shadow: 0px 0px 0px 1px red;
+  }
+  /* ========== 手機版 ======================================== */
+  /* ========================================================== */
+
+  @media screen and (max-width: 376px) {
+    /* 共用元件 */
+
+    input,
+    select {
+      width: 100%;
+      height: 55px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #eae8e8;
+      font-size: 16px;
+      padding: 15px;
+    }
+
+    .order-info-detail label,
+    .receiver-info-box label {
+      margin-bottom: 5px;
+    }
+
+    /* 訂購人資訊 */
+    .order-info-box {
+      width: auto;
+      height: auto;
+      outline: 1px solid #ecebeb;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .order-info-title {
+      width: 100%;
+      height: 45px;
+      background-color: #ecebeb;
+      font-size: 18px;
+      line-height: 45px;
+      padding-left: 15px;
+    }
+
+    .order-info-detail {
+      padding: 15px 15px 0 15px;
+      font-size: 16px;
+    }
+
+    .email-input {
+      margin-bottom: 10px;
+    }
+    /* 收件人資訊 */
+
+    .receiver-info-box {
+      width: auto;
+      /* height: 800px; */
+      margin: auto;
+      outline: 1px solid #ecebeb;
+      margin-bottom: 30px;
+    }
+
+    .receiver-title {
+      width: 100%;
+      height: 45px;
+      font-size: 18px;
+      line-height: 45px;
+      background-color: #ecebeb;
+      padding-left: 15px;
+    }
+
+    .recevier-detail-box {
+      padding: 15px;
+      font-size: 16px;
+    }
+
+    input:nth-child(1) {
+      height: 20px;
+      width: 20px;
+      margin-right: 5px;
+      margin-bottom: 0px;
+    }
+
+    .same-person-btn label {
+      line-height: 20px;
+      margin-bottom: 0px;
+    }
+
+    /* 超商取貨 */
+    .convenience-store-box {
+      padding: 0 15px;
+    }
+    .convenience-store-box .title {
+      font-size: 18px;
+      color: black;
+      font-weight: bolder;
+      padding: 0px;
+      height: 30px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid black;
+    }
+
+    .store-select-area {
+      width: 100%;
+      height: auto;
+      padding: 15px 0;
+      margin-bottom: 15px;
+    }
+
+    .store-info-box {
+      outline: 1px solid #eae8e8;
+      padding: 10px;
+      border-radius: 5px;
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    .store-info {
+      background-color: #d5e8f1;
+      width: 130px;
+      height: 70px;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .store-info:hover {
+      background-color: #aad7ee;
+    }
+
+    .store-name {
+      font-size: 16px;
+      font-weight: bolder;
+      margin-bottom: 5px;
+    }
+
+    .store-address {
+      font-size: 14px;
+    }
+
+    /* 超取選擇、確認按鈕 */
+
+    .re-select-btn {
+      width: 100px;
+      height: 30px;
+      border-radius: 10px;
+      border: none;
+      margin-right: 20px;
+      font-size: 16px;
+    }
+    .confirm-btn {
+      width: 100px;
+      height: 30px;
+      border-radius: 10px;
+      border: none;
+      background-color: #aad7ee;
+      font-size: 16px;
+    }
+
+    .order-note-box {
+      padding: 0 15px;
+    }
+
+    .note-title {
+      font-size: 18px;
+      font-weight: bolder;
+      margin-bottom: 15px;
+    }
+    .note-content {
+      width: 100%;
+      height: 100px;
+      border: 1px solid #aaa8a8;
+      margin-bottom: 15px;
+    }
+
+    /* 付款資訊 */
+    .payment-box {
+      width: auto;
+      outline: 1px solid #ecebeb;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .payment-title {
+      width: 100%;
+      height: 45px;
+      font-size: 18px;
+      line-height: 45px;
+      background-color: #ecebeb;
+      padding-left: 15px;
+    }
+
+    .payment-info-box {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+    }
+    .credit-card-info select {
+      width: 100%;
+    }
+
+    .margin-Revise {
+      width: 100%;
+      /* outline: 1px solid red; */
+      margin: 0 30px 0 -15px;
+    }
+
+    .submit-order-box {
+      width: auto;
+      margin: auto;
+      margin-bottom: 30px;
+      height: auto;
+      outline: 1px solid #ecebeb;
+    }
+
+    .agree-box {
+      padding: 15px;
+      border-bottom: 1px solid #ecebeb;
+      align-items: center;
+    }
+    .agree-box input {
+      width: 20px;
+      height: 20px;
+      margin: 0px;
+    }
+    .agree-box > label {
+      height: 20px;
+      margin-left: 5px;
+      margin-bottom: 0px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .submit-box {
+      padding: 15px;
+    }
+
+    .btn-group {
+      font-size: 16px;
+      color: #00a0f0;
+    }
+    .btn-group i {
+      margin-right: 5px;
+    }
+
+    .checkout-box {
+      width: 100%;
+    }
+    .checkout-btn {
+      height: 50px;
+      width: 100%;
+      background-color: #00a0f0;
+      border: none;
+      border-radius: 10px;
+      bottom: 30px;
+      font-size: 16px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 50px;
+      font-weight: bolder;
+    }
+    
+  }
+}

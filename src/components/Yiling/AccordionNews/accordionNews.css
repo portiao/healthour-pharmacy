@@ -1,0 +1,76 @@
+.accordionPortia {
+width: 750px;
+margin: 0px auto;
+text-align: left;
+/* border: 1px solid #ccc; */
+}
+.titlePo {
+padding: 26.2px;
+font-size: 22px;
+/* font-weight: bold; */
+background: #EEF7FC;
+border-top: 1px solid #fff;
+
+}
+.content-boxP {
+
+background-color: white;
+padding: 0px 10px;
+overflow: hidden;
+height: 0px;
+transition: .5s;
+
+}
+
+.newBoxPo{
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.newBoxPo p{
+    font-size: 18px;
+    padding: 10px;
+    max-width: auto;
+    margin: 0 30px;
+}
+
+/*增加點擊後的效果*/
+/* .focus:before{
+    content: '+';
+    background-color: #00A0f0;
+    padding: 5px;
+    border-radius: 50%;
+}
+.unfocus:before{
+    content: '-';
+    background-color: #00A0f0;
+    padding: 6px;
+    border-radius: 50%
+}
+.titleP{
+    display: flex;
+    justify-content: space-between;
+} */
+
+
+
+@media screen and (max-width: 375px) {
+    .accordionPortia {
+        width: 350px;
+        }
+        .titlePo {
+            padding: 15px 2px;
+            font-size: 8px;
+        }
+        .newBoxPo{
+            margin: 10px 10px;
+        }
+        .newBoxPo p{
+            font-size: 8px;
+            padding: 8px;
+            
+            margin: 0 5px;
+        }
+
+}

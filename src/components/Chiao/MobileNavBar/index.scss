@@ -1,0 +1,65 @@
+
+/* =========== 以下正式css ================================= */
+@media screen and (max-width: 900px) {
+  .navbar-box {
+    width: 100%;
+  }
+
+  .header {
+    height: 60px;
+    width: 100%;
+    background-color: white;
+  }
+
+  .nav-bar {
+    background-color: #eef7fc;
+  }
+  .nav-body {
+    height: 588px;
+    width: 100%;
+    background-color: #eef7fc;
+    transition: .5s;
+    overflow: hidden;
+  }
+ 
+  .hide{
+    height: 0px;
+  }
+  .health-knowledge {
+    border: none;
+  }
+  .title {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 20px 30px;
+    height: 70px;
+    color: #00a0f0;
+  }
+  .link-style {
+    color: #00a0f0;
+  }
+  .Logo-img {
+    width: 70%;
+    height: 55px;
+    padding-left: 5px;
+    padding-top: 6px;
+  }
+  img {
+    height: 100%;
+  }
+  .icon-area {
+    width: 30%;
+    height: 100%;
+    line-height: 60px;
+    text-align: right;
+    padding-right: 25px;
+  }
+  .menu-icon {
+    width: 25px;
+    height: 25px;
+    color: #00a0f0;
+  }
+
+  
+  
+}

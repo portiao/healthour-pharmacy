@@ -1,0 +1,5 @@
+分成三個資料表
+
+711CD.json：7-11 city-district
+711DS.json：7-11 district-street
+711SS.json：7-11 Street-Store

@@ -1,0 +1,38 @@
+.pagination-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+/* 按鈕li */
+ul.pagination li.page-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 按鈕a，邊框 */
+ul.pagination a.page-link {
+    border:none;
+    margin: .175rem .5rem;
+    color: #000;
+}
+
+/* 自行添加的class，不影響上下按鈕 */
+ul.pagination .number-btn a.page-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: .175rem .5rem;
+    // width: 30px;
+    // height: 30px;
+}
+
+// active
+ul.pagination .page-item.active .page-link {
+    background-color: #ADD5F5;
+    border-color: transparent;
+    color: #000;
+    margin: .175rem .5rem;
+    border-radius: 50%;
+}

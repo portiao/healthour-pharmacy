@@ -1,0 +1,113 @@
+/* Button CSS */
+.buttonBlue {
+  display: flex;
+  justify-content: flex-end;
+  gap: 120px;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  width: 280px;
+  height: 56px;
+  font-size: 20px;
+
+  color: #fff;
+  background: #c0c9d0;
+  background-origin: border-box;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#navbar-body{
+  gap: 82px;
+}
+
+.button-blueFocus {
+  outline: 0;
+  background: #00a0f0;
+}
+
+.buttonPushName {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/*醫院 | 診所 文字對齊*/
+.Hos {
+  gap: 105px;
+}
+
+.navPushDouble {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.navPushPsh {
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+}
+
+.arrowEnterAgain {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 60px;
+}
+
+/*保健百科圖*/
+.navallIcon {
+  width: 150px;
+  height: 150px;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px #c4c4c4;
+  margin: 0 20px 20px 20px;
+  cursor: pointer;
+}
+.navliImg img {
+  width: 40%;
+  height: 40%;
+}
+
+.navline1icon {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 650px;
+}
+.navforIconList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.changeHos {
+  text-decoration: none;
+}
+
+.navliImg p {
+  padding-top: 20px;
+}
+/* A連結置中 */
+.navChandePageEnc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.arrowEnterAgain img{
+  object-fit: contain;
+}
+
+
+.navallIcon:hover{
+  background-color: #c4c4c4;
+}

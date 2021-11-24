@@ -1,0 +1,33 @@
+/* 手機 灰色fixed navbar */
+.bottom-navbar{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  background-color: #7F7F7F;
+  padding:10px 15px;
+  z-index: 100;
+}
+
+.bottom-navbar .item .icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto 5px;
+}
+.bottom-navbar .item .text {
+  color:#fff;
+}
+
+/* 圖片依照內容縮放 */
+.bottom-navbar .item .icon img {
+  object-fit: contain;
+}
+
+@media screen and (min-width: 992px) {
+  /* 桌機隱藏 */
+  .bottom-navbar {
+    display:none
+  }
+
+}

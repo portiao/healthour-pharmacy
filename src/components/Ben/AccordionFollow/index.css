@@ -1,0 +1,28 @@
+.accordion {
+    display: block;
+}
+
+.accordion .cate-title, 
+.accordion .body-title {
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 0;
+    color:#000;
+}
+
+.card{
+    margin-bottom: 25px;
+}
+
+.card-body{
+    padding: 15px;
+    color:#000;
+}
+
+@media screen and (min-width:992px){
+    .accordion{
+        display: none;
+    }
+}

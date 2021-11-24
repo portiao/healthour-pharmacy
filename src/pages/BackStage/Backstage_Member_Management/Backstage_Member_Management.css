@@ -1,0 +1,275 @@
+/*設定整個版面的寬*/
+.Backstage-Member-Management {
+  margin: 0px auto;
+  width: 1140px;
+  margin-bottom: 50px;
+}
+
+/*設定整個版面在手機板的寬*/
+@media (max-width: 375px) {
+  .Backstage-Member-Management {
+    width: 309px;
+  }
+}
+
+
+/***搜尋區*************************************/
+
+.Backstage-Member-Management-search {
+  position: relative;
+  align-items: center;
+}
+
+
+.Backstage-Member-Management-search-area {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0px;
+}
+
+@media (max-width: 375px) {
+  .Backstage-Member-Management-search-area {
+    height: 143px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/*設定搜尋欄的寬*/
+.Backstage-Member-Management-search-input {
+  font-size: 20px;
+  width: 314px;
+  height: 38px;
+  padding-left: 17px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 50px;
+}
+
+@media (max-width: 375px) {
+  .Backstage-Member-Management-search-input {
+    width: 282px;
+    font-size: 18px;
+  }
+}
+
+
+/*捨定放大鏡按鈕的樣式*/
+.Backstage-Member-Management-search-button {
+  position: absolute;
+  right: 15px;
+  top: 7px;
+  background-color: white;
+  border: 0px;
+}
+/*設定放大鏡的大小*/
+.Backstage-Member-Management-search-button img {
+  width: 23px;
+  height: 21px;
+}
+/*放大鏡的滑鼠樣式*/
+.Backstage-Member-Management-search-button:hover {
+  cursor: pointer;
+}
+
+/**會員資料列表********************************************************/
+
+.Backstage-Member-Management-memberlist {
+  position: relative;
+  left: 15px;
+  margin: 0px auto;
+  width: 1140px;
+  font-size: 20px;
+}
+
+/*PC版的會員列表在手機板時消失*/
+@media (max-width: 375px) {
+  .Backstage-Member-Management-memberlist {
+    display: none;
+  }
+}
+
+.Backstage-Member-Management-table-title {
+  border-bottom: 3px solid #00a0f0;
+}
+
+/*標題樣式*/
+.Backstage-Member-Management-table-title td {
+  padding-bottom: 10px;
+  padding-right: 0px;
+}
+
+/*表單sid標題文字置中*/
+.Backstage-Member-Management-table-title-sid {
+  text-align: center;
+}
+
+#Backstage-Member-Management-table-title-address {
+  padding-right: 0px;
+}
+
+/*會員資料樣式*/
+.Backstage-Member-Management-table-list td {
+  border-bottom: 1px solid #00a0f0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 0px;
+}
+
+/*會員資料列表裡的sid欄位文字置中*/
+.Backstage-Member-Management-table-list-sid {
+  text-align: center;
+}
+
+#Backstage-Member-Management-table-list-address {
+  padding-right: 0px;
+}
+
+/*按鈕區*******************************/
+
+/* 按鈕排列與大小 */
+.Backstage-Member-Management-table-list-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.Backstage-Member-Management-table-list-buttons a {
+  width: 46px;
+  height: 30px;
+}
+
+/* 按鈕樣式 */
+.Backstage-Member-Management-table-list-buttons-edit,
+.Backstage-Member-Management-table-list-buttons-edit-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00a0f0;
+  height: 30px;
+  width: 45px;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+/* 刪除按鈕顏色 */
+.Backstage-Member-Management-table-list-buttons-edit-delete {
+  background-color: #ff5252;
+}
+
+/* 包覆白色icon 給予寬高 */
+.Backstage-Member-Management-table-list-buttons-edit,
+.Backstage-Member-Management-table-list-buttons-edit-delete div {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+/***手機板會員列表*************************************/
+
+/*PC版時不出現*/
+.Backstage-Member-Management-mobile-memberlist{
+  display: none;
+}
+
+/*設定手機板會員列表樣式*/
+@media (max-width: 375px) {
+  .Backstage-Member-Management-mobile-memberlist {
+    position: relative;
+    width: 311px;
+    background-color: #dff4ff;
+    display: block;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+}
+
+/*手機版的藍色分隔線*/
+@media (max-width: 375px) {
+  .Backstage-Member-Management-mobile-memberlist-cardline {
+    position:absolute;
+    top: 43px;
+    width: 278px;
+    height: 1px;
+    border-bottom: 1px solid #00A0F0;
+  }
+}
+
+/*手機板會員資料的title整體樣式*/
+@media (max-width: 375px) {
+  .Backstage-Member-Management-mobile-memberlist-title{
+    margin-bottom: 60px;
+  }
+}
+
+/*手機板會員資料的title樣式*/
+@media (max-width: 375px) {
+  .Backstage-Member-Management-mobile-memberlist-title li{
+    margin: 10px 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  #Backstage-Member-Management-mobile-memberlist-title-sid{
+    margin: 20px 0px;
+    text-align: left;
+  }
+}
+
+/*會員資料樣式*/
+@media (max-width: 375px) {
+  .Backstage-Member-Management-mobile-memberlist-info {
+    text-align: right;
+    margin-left: 45px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Backstage-Member-Management-mobile-memberlist-info li{
+    margin: 10px 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  #Backstage-Member-Management-mobile-memberlist-info-name{
+    margin: 20px 0px;
+
+  }
+}
+
+/*手機板會員資料按鈕樣式*/
+@media (max-width: 375px) {
+  .Backstage-Member-Management-mobile-memberlist-buttons{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+  }
+}
+
+.Backstage-Member-Management-mobile-memberlist-buttons a {
+  width: 46px;
+  height: 30px;
+}
+
+/* 按鈕樣式 */
+.Backstage-Member-Management-mobile-memberlist-buttons-edit,
+.Backstage-Member-Management-mobile-memberlist-buttons-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00a0f0;
+  height: 30px;
+  width: 45px;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+/* 刪除按鈕顏色 */
+.Backstage-Member-Management-mobile-memberlist-buttons-delete {
+  background-color: #ff5252;
+}

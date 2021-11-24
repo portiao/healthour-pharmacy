@@ -1,0 +1,96 @@
+/* item樣式 */
+.products-list .item-computer,
+.products-list .item-mobile {
+    padding: 35px 0 10px;
+    border-bottom: 1px solid #00A0F0
+}
+
+/* 內容文字區域 */
+.products-list .item-computer .text,
+.products-list .item-mobile .text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* 手機欄位 */
+.products-list .item-mobile .text p {
+    width: 25%;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* 桌機欄位 + 兩個空白欄位 */
+.products-list .item-computer .text p,
+.products-list .item-computer .text div {
+    width: 9.9999%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.products-list  .text .name{
+    line-height: 25px;
+}
+
+/* 桌機按鈕區 */
+.products-list .item-computer .text .buttons {
+    width: 16%;
+}
+
+/* 按鈕排列 */
+.products-list .item-computer .buttons,
+.products-list .item-mobile .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+/* 按鈕樣式 */
+.products-list .item-computer .buttons .edit,
+.products-list .item-mobile .buttons .edit,
+.products-list .item-computer .buttons .delete,
+.products-list .item-mobile .buttons .delete {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #00A0F0;
+    height: 30px;
+    width: 45px;
+    border-radius: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+/* 刪除按鈕顏色 */
+.products-list .item-computer .buttons .delete,
+.products-list .item-mobile .buttons .delete {
+    background-color: #FF5252;
+}
+
+/* 包覆白色icon 給予寬高 */
+.products-list .item-computer .buttons .edit div,
+.products-list .item-mobile .buttons .edit div,
+.products-list .item-computer .buttons .delete div,
+.products-list .item-mobile .buttons .delete div {
+    width: 20px;
+    height: 20px;
+    margin: auto
+}
+
+/* 關閉電腦版item */
+.products-list .item-computer {
+    display: none
+}
+
+@media screen and (min-width: 992px) {
+
+    /* 關閉手機item */
+    .products-list .item-mobile {
+        display: none
+    }
+
+    /* 開啟桌機item */
+    .products-list .item-computer {
+        display: block
+    }
+
+}

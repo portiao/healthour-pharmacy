@@ -1,0 +1,22 @@
+.selectClass {
+  width: 141px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #c0c9d0;
+  color: #c0c9d0;
+  font-size: 18px;
+  font-family: "GenSenRounded JP", sans-serif;
+}
+
+.selectClass option {
+  font-size: 18px;
+  font-family: "GenSenRounded JP", sans-serif;
+  color: #c0c9d0;
+  text-align: center;
+}
+
+.selectAll {
+  display: flex;
+  gap: 30px;
+}

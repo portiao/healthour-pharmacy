@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+
+}
+
+ul,
+ol {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
+/* 關閉側邊欄 */
+.productsSearchPage .aside-cate,
+.productsSearchPage .aside-browse-recode {
+  display: none;
+}
+
+.productsSearchPage .main {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  /* 桌機時頁面flex水平 */
+  .productsSearchPage {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* 側邊欄寬度 */
+  .productsSearchPage .aside-cate {
+    display: block;
+    width: calc(20% - 15px);
+  }
+
+  /* 主體寬度 */
+  .productsSearchPage .main {
+    width: calc(60% - 15px);
+  }
+
+  /* 側邊欄寬度 */
+  .productsSearchPage .aside-browse-recode {
+    width: calc(20% - 15px);
+    display: block;
+  }
+
+}
+
+/* 手機 主標題 */
+.productsSearchPage .main-title {
+  display: block;
+  margin-bottom: 35px;
+}
+
+/* 文字區域樣式 */
+.productsSearchPage .main-title .text {
+  position: relative;
+  background-color: #EEF7FC;
+  border-radius: 20px 0 20px 0;
+  padding: 5px 0;
+  width: 58%;
+  margin: 0 auto 10px;
+}
+
+/* 線 */
+.productsSearchPage .main-title .line {
+  background-color: #66CBFF;
+  width: 100%;
+  height: 1px;
+}
+
+/* 文字樣式 */
+.productsSearchPage .main-title .text p {
+  position: relative;
+  color: #00A0F0;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 橫條前方的粗線 */
+.productsSearchPage .main-title .text p::after {
+  content: '';
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  background-color: #66CBFF;
+  width: 5px;
+  height: 25px;
+}
+
+@media screen and (min-width:992px){
+  .productsSearchPage .main-title {
+    display: none;
+  }
+}
+
+
+/* 類別和身體下拉框 */
+.productsSearchPage .cate-select,
+.productsSearchPage .body-select {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.productsSearchPage .body-select {
+  margin-bottom: 30px;
+}
+
+/* 類別和身體標題 */
+.productsSearchPage .cate-select-title,
+.productsSearchPage .body-select-title {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+@media screen and (min-width:992px) {
+  /* 桌機 隱藏下拉框和其標題 */
+  .productsSearchPage .cate-select-title,
+  .productsSearchPage .body-select-title,
+  .productsSearchPage .cate-select,
+  .productsSearchPage .body-select {
+    display: none;
+  }
+}
+
+/* 藍色現在類別標題 */
+.productsSearchPage .main .cate-title-blue {
+  display: block;
+  background-color: #EEF7FC;
+  color: #00A0F0;
+  text-align: center;
+  font-size: 20px;
+  padding: 8px 0;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  /* 桌機 關閉藍色現在類別標題 */
+  .productsSearchPage .main .cate-title-blue {
+    display: none
+  }
+}
+
+/* 商品顯示區 */
+.productsSearchPage .products-item-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+/* 載入中 */
+.productsSearchPage .products-item-group .spinner-grow {
+  margin: 10px 45%;
+}
+
+/* 微調item的樣式 */
+/* 手機 一行顯示兩個 */
+.productsSearchPage .products-item-group>a {
+  width: calc(50% - 10px);
+}
+
+.productsSearchPage .products-item-group .product .item {
+  width: 100%;
+}
+
+.productsSearchPage .products-item-group .product .item .title {
+  /* font-size: 14px; */
+}
+
+.productsSearchPage .products-item-group .product .item .price {
+  /* font-size: 16px; */
+}
+
+
+@media screen and (min-width: 992px) {
+  /* 商品顯示區 */
+  .productsSearchPage .products-item-group {
+    justify-content: flex-start;
+  }
+
+  /* 桌機 一行顯示三個 */
+  .productsSearchPage .products-item-group>a {
+    width: calc(33.3333% - 15px);
+    margin:0 7px 5px;
+  }
+
+
+}
+
+/* 側邊欄 瀏覽過商品 */
+.productsSearchPage .aside-browse-recode>.title {
+  font-size: 25px;
+  padding: 6px 15px;
+  border-left: 5px solid #00A0F0;
+}
+
+/* 微調item */
+.productsSearchPage .aside-browse-recode .product .item {
+  width: 75%;
+}
+
+/* 手機 瀏覽過商品輪播 */
+@media screen and (min-width: 992px){
+  .productsSearchPage .browse-record,
+  .productsSearchPage .browseRecordSlider {
+    display: none;
+  }
+}

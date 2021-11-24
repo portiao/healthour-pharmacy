@@ -1,0 +1,82 @@
+/* 全站優惠 */
+.cart-bottom2{
+  height: 100%;
+}
+.AllStore-discount-box {
+  padding: 10px 25px;
+  font-size: 18px;
+}
+.column-1 {
+  height: 30px;
+}
+.column-2 {
+  height: 40px;
+}
+.color-box {
+  width: 160px;
+  height: 40px;
+  background-color: #d7f1ff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+/* 訂單價格 */
+.cart-bottom2 .summary-detail-box {
+  width: 60%;
+  margin-left: auto;
+  padding: 0 25px;
+}
+.summary-detail {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.total-number {
+  font-size: 22px;
+  font-weight: bold;
+  color: #19526e;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 376px) {
+  /* 全站優惠 */
+  .AllStore-discount-box {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-bottom: 1px solid #eae8e8;
+  }
+  .color-box {
+    width: 100px;
+    height: 25px;
+    background-color: #d7f1ff;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  .column-1 {
+    height: 20px;
+  }
+  .column-2 {
+    height: 40px;
+  }
+
+  /* 訂單價格 */
+  .cart-bottom2 .summary-detail-box {
+    width: 100%;
+    padding: 15px;
+  }
+  .summary-detail {
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  .total-number {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #19526e;
+  }
+}

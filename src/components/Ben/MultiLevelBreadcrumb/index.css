@@ -1,0 +1,32 @@
+ol.breadcrumb {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding: 0.75rem 1rem;
+}
+
+.breadcrumb-item.active{
+    width: auto;
+    height: auto;
+}
+
+.breadcrumb a:hover {
+    color: #fff;
+    border-radius: 35px;
+    background-color: #82ccdd;
+    padding: 5px 10px;
+}
+
+
+.breadcrumb li+li:before {
+    margin-right: 10px;
+}
+
+.breadcrumb li {
+    padding: 0 10px;
+    color: #00A0F0;
+    padding-left: 0;
+}

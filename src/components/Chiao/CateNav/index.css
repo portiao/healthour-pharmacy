@@ -1,0 +1,95 @@
+/* 點擊添加now樣式 */
+.cate-nav .cate .title .text.now,
+.cate-nav .body .title .text.now,
+.cate-nav .arrow .right.now{
+    color: #00A0F0;
+}
+
+/* 箭頭樣式 */
+.cate-nav .arrow .right {
+    color: #000
+}
+
+/* 藍色標題背景樣式 */
+.cate-nav .blue-title .text {
+    position: relative;
+    background-color: #EEF7FC;
+    border-radius: 20px 0 20px 0;
+    /* padding: 5px 0; */
+    width: 100%;
+    margin: 0 auto 25px;
+}
+
+/* 藍色標題文字樣式 */
+.cate-nav .blue-title .text p {
+    position: relative;
+    color: #00A0F0;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* 標題前的藍線 */
+.cate-nav .blue-title .text p::after {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    background-color: #66CBFF;
+    width: 5px;
+    height: 25px;
+}
+
+.cate-nav .cate,
+.cate-nav .body {
+    padding: 0 15px
+}
+
+/* 小標題mb */
+.cate-nav .cate .title,
+.cate-nav .body .title {
+    margin-bottom: 15px;
+}
+
+/* 小標題 文字和箭頭排列 */
+.cate-nav .cate .title a,
+.cate-nav .body .title a {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* 類別文字樣式 */
+.cate-nav .cate .title .text,
+.cate-nav .body .title .text {
+    color: #000;
+    font-size: 18px;
+}
+
+/* 箭頭 */
+.cate-nav .cate .title .arrow,
+.cate-nav .body .title .arrow {
+    width: 22px;
+    height: 22px;
+}
+
+/* 分隔線 */
+.cate-nav .line {
+    background-color: #C0C9D0;
+    height: 1px;
+    margin-bottom: 20px;
+}
+
+.chiao-container .cate-nav{
+    width: 80%;
+}
+
+/* 自訂1-先預設是隱藏*/
+.cate-nav{display:none} 
+
+/* 自訂2-若寬度大於992px就顯示*/ 
+@media only screen and (min-width: 992px) {
+     .cate-nav { 
+         display: block; 
+        } 
+    }

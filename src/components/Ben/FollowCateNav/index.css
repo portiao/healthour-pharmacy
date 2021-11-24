@@ -1,0 +1,104 @@
+/* 點擊添加now樣式 */
+.cate-nav .cate .title .text.now,
+.cate-nav .arrow .right.now,
+.cate-nav .cate .content li div.now {
+    color: #00A0F0;
+}
+
+.cate-nav .cate .content li div{
+    cursor: pointer;
+}
+
+/* ul區顯示隱藏 */
+.cate-nav .cate .content {
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* ul區顯示隱藏 */
+.cate-nav .cate .content.now{
+    height: 144px;
+    transition: .5s;
+}
+
+/* 箭頭樣式 */
+.cate-nav .arrow .right {
+    color: #000
+}
+
+/* 藍色標題背景樣式 */
+.cate-nav .blue-title .text {
+    position: relative;
+    background-color: #EEF7FC;
+    border-radius: 20px 0 20px 0;
+    padding: 5px 0;
+    width: 100%;
+    margin: 0 auto 25px;
+}
+
+/* 藍色標題文字樣式 */
+.cate-nav .blue-title .text p {
+    position: relative;
+    color: #00A0F0;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* 標題前的藍線 */
+.cate-nav .blue-title .text p::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    background-color: #66CBFF;
+    width: 5px;
+    height: 25px;
+}
+
+.cate-nav .cate{
+    padding: 0 15px
+}
+
+/* 小標題mb */
+.cate-nav .cate .title {
+    margin-bottom: 15px;
+}
+
+/* 小標題 文字和箭頭排列 */
+.cate-nav .cate .title div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* 類別文字樣式 */
+.cate-nav .cate .title .text {
+    color: #000;
+    font-size: 18px;
+}
+
+/* 箭頭 */
+.cate-nav .cate .title .arrow {
+    width: 22px;
+    height: 22px;
+}
+
+/* 類別內容 */
+.cate-nav .cate .content li {
+    margin: 0 0 20px 5px;
+}
+
+/* 內別文字顏色 */
+.cate-nav .cate .content li a {
+    color: #000;
+}
+
+/* 分隔線 */
+.cate-nav .line {
+    background-color: #C0C9D0;
+    height: 1px;
+    margin-bottom: 20px;
+}

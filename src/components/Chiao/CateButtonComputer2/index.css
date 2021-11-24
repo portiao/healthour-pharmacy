@@ -1,0 +1,39 @@
+/* 桌機 頁簽 */
+.cate-button-computer {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+
+    /* 開啟頁簽 */
+    .cate-button-computer {
+        display: flex;
+        border-bottom: 6px solid #1295DF;
+        margin-bottom: 15px;
+    }
+
+    /* 頁簽按鈕樣式 */
+    .cate-button-computer .cate-option a,
+    .cate-button-computer .body-option a {
+        display: inline-block;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        width: 300px;
+        height: 60px;
+        line-height: 60px;
+        background-color: #00A0F0;
+        border-radius: 15px 15px 0 0;
+        text-align: center;
+    }
+
+    /* 點擊按鈕後樣式 */
+    .cate-button-computer .cate-option a.now,
+    .cate-button-computer .body-option a.now {
+        background-color: #66CBFF;
+    }
+
+    /* body ml15 */
+    .cate-button-computer .body-option a {
+        margin-left: 15px;
+    }
+}

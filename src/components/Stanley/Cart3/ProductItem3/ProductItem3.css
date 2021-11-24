@@ -1,0 +1,37 @@
+/* 購物車商品欄位 */
+.cart-item {
+  border-bottom: 1px solid #ecebeb;
+  padding: 15px 25px;
+  height: 190px;
+  font-size: 20px;
+}
+
+.productItem3 .product-img {
+  width: 160px;
+  height: 160px;
+  background-color: #00a0f0;
+  margin-right: 10px;
+}
+
+.product-description {
+  max-width: 274px; /* 454-160-20(padding) */
+  font-size: 20px;
+}
+
+@media screen and (max-width: 376px) {
+  .cart-item {
+    height: auto;
+    padding: 15px;
+    font-size: 14px;
+    border-bottom: 1px solid #eae8e8;
+  }
+
+  .productItem3 .product-img {
+    width: 80px;
+    height: 80px;
+  }
+  .product-description {
+    height: 60px;
+    font-size: 14px;
+  }
+}

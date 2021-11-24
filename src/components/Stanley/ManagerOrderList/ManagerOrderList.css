@@ -1,0 +1,27 @@
+
+  .field-title {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #00a0f0;
+    padding: 10px;
+  }
+
+  .field-content {
+    font-size: 20px;
+    border-bottom: 1px solid #00a0f0;
+    padding: 15px;
+  }
+
+  /* hover效果可以之後再改 */
+  .field-content:hover {
+    background-color: #abdbf37e;
+  }
+
+  .field-content input {
+    width: 20px;
+    height: 20px;
+  }
+
+  .red-word {
+    color: red;
+  }

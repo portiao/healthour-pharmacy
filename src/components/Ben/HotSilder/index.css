@@ -1,0 +1,191 @@
+/* 熱門商品 輪播 */
+/* Arrows */
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+    opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 35px;
+    line-height: 1;
+
+    opacity: 1;
+    color: transparent;
+  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev:before {
+    background: url('http://localhost:3000/images/arrow/left.jpg');
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+}
+
+.slick-next:before {
+    background:url('http://localhost:3000/images/arrow/right.jpg');
+    background-size :contain;
+    width: 35px;
+    height: 35px;
+}
+
+.hotSilder .slick-prev {
+    left: -16%;
+}
+
+[dir='rtl'] .slick-prev {
+    right: -25px;
+    left: auto;
+}
+
+.slick-prev:before {
+    content: '←';
+}
+
+[dir='rtl'] .slick-prev:before {
+    content: '→';
+}
+
+.hotSilder .slick-next {
+    right: -16%;
+}
+
+[dir='rtl'] .slick-next {
+    right: auto;
+    left: -25px;
+}
+
+.slick-next:before {
+    content: '→';
+}
+
+[dir='rtl'] .slick-next:before {
+    content: '←';
+}
+
+/* 自定義區塊 */
+
+.hotSilder {
+    width: 77%;
+    margin: 0 auto 40px;
+}
+
+.hotSilder .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, .25);
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: 5px 0;
+    padding: 30px 0 60px;
+}
+
+.hotSilder .item .number {
+    width: 19%;
+    padding: 10px 0;
+    border-radius: 0 30% 30% 30%;
+    box-shadow: 6px 6px 10px rgba(0,0,0,.25);
+    background-color: #00A0F0;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    z-index:2
+}
+
+.hotSilder .text .title {
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #C0C9D0;
+    width: 85%;
+    color: #fff;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 13px 0;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.hotSilder .item .pic {
+    position: relative;
+    width: 60%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:992px) {
+    /* 放大輪播圖 */
+    .hotSilder {
+        width: 85%;
+    }
+
+    /* 讓各個商品iten之間有空格 */
+    .hotSilder .slick-slide {
+        padding: 0 10px
+    }
+
+    /* 調大商品排行的寬度 */
+    .hotSilder .item .number {
+        width: 20%;
+        padding: 7px 0;
+    }
+
+    /* 調整箭頭位置 */
+    .hotSilder .slick-prev {
+        left: -9%;
+    }
+    
+    /* 調整箭頭位置 */
+    .hotSilder .slick-next {
+        right: -9%;
+    }
+}

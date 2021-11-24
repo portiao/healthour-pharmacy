@@ -1,0 +1,220 @@
+.chiao-container2 {
+  max-width: 1140px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.choose-btn3{
+  margin-top: 50px;
+}
+
+
+/* 搜尋欄 */
+.flex-container1 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1140px;
+}
+
+
+
+.mapsearch-bar,
+.select-bar1,
+.select-bar2,
+.mapsearch-btn,
+.nearby-btn {
+  margin: 10px;
+}
+
+/* 醫院搜尋欄 */
+.mapsearch-bar1 {
+  width: 300px;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #c0c9d0;
+  border: 1px solid #c0c9d0;
+}
+
+/* 科別欄 */
+.select1 {
+  width: 125px;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #c0c9d0;
+  border: 1px solid #c0c9d0;
+  cursor: pointer;
+}
+
+/* 地區欄 */
+.select2 {
+  width: 125px;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #c0c9d0;
+  border: 1px solid #c0c9d0;
+  cursor: pointer;
+}
+
+/* 搜尋按鈕 */
+.mapsearch-btn1 {
+  width: 100px;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #00a0f0;
+  color: #fff;
+  border: 1px solid #c0c9d0;
+  cursor: pointer;
+}
+
+/* 我附近按鈕 */
+.nearby-btn1 {
+  width: 250px;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #00a0f0;
+  border: 1px solid #c0c9d0;
+  cursor: pointer;
+}
+
+.nearby-btn1:hover {
+  color: #fff;
+  background-color: #00a0f0;
+}
+
+/* 搜尋欄 */
+
+/* 地圖部分 */
+
+.maptext {
+  color: #7f7f7f;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* .mymap {
+  margin: 0px auto;
+  text-align: center;
+} */
+
+/* .mymap div {
+  display: inline-block;
+  vertical-align: top;
+  height: 80vh;
+  border: 1px solid #c0c9d0;
+  border-radius: 3px;
+  margin: 20px 5px 20px 0px;
+  line-height: 1.5em;
+} */
+
+/* .side-data {
+  width: 300px;
+  height: 80vh;
+} */
+
+/* .side-data li,
+.side-data p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #7f7f7f;
+  display: inline-block;
+} */
+
+/* .seemore-btn {
+  background-color: #fff;
+  color: #00a0f0;
+  height: 55px;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid;
+  margin-top: 50px;
+} */
+
+/* .map {
+  width: 800px;
+  height: 80vh;
+} */
+
+.themap1 {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px; 
+}
+
+.mapleft1 {
+  width: 335px;
+  height: 80vh;
+  border: 1px solid #00A0F0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mapright {
+  width: 795px;
+}
+
+
+
+/* 地圖部分 */
+
+.datacard {
+  margin-top: 20px;
+  width: 270px;
+  height: 150px;
+  background-color: #eef7fc;
+  padding: 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .mapsearch-bar1,
+  .select1,
+  .select2,
+  .mapsearch-btn1,
+  .nearby-btn1 {
+    width: 345px;
+  }
+
+  .mapsearch-bar1 {
+    padding: 0;
+  }
+
+  .themap1{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mapleft1 {
+    width: 345px;
+    height: 80vh;
+    margin: 15px;
+  }
+
+  .mapright {
+    width: 345px;
+    margin: 0 auto;
+  }
+
+  .maptext {
+    text-align: center;
+  }
+
+  .choose-btn3>.cate-button{
+    width: 345px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+}

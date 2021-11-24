@@ -1,0 +1,102 @@
+/* 訂單明細 */
+.summary-box {
+  position: relative;
+  height: 430px;
+  width: 100%;
+  outline: 1px solid #ecebeb;
+}
+
+.summary-detail-box {
+  width: 100%;
+  padding: 25px;
+}
+.summary-detail {
+  width: 100%;
+  font-size: 20px;
+  line-height: 55px;
+}
+
+.total-number {
+  font-size: 22px;
+  font-weight: bold;
+  color: #19526e;
+  margin: 10px 0;
+}
+.border {
+  margin-top: 40px;
+  border-bottom: 1px solid black;
+}
+
+.checkout-box {
+  padding: 0 25px;
+}
+.checkout-btn {
+  height: 60px;
+  width: 100%;
+  border: none;
+  background-color: #00a0f0d5;
+  border-radius: 10px;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 60px;
+  font-weight: bolder;
+}
+
+.checkout-btn:hover {
+  background-color: #00a0f0;
+}
+
+.BsFillExclamationTriangleFill {
+  color: rgb(218, 105, 105);
+  font-size: 22px;
+}
+.modal-body-word {
+  font-size: 22px;
+}
+@media screen and (max-width: 376px) {
+  /* 訂單明細 */
+  .summary-box {
+    width: 100%;
+    height: auto;
+    outline: 1px solid #ecebeb;
+  }
+
+  .summary-detail-box {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  .summary-detail {
+    width: 100%;
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .border {
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+  }
+
+  .total-number {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #19526e;
+  }
+
+  .checkout-box {
+    padding: 0 15px 15px;
+  }
+  .checkout-btn {
+    position: static;
+    width: 100%;
+    height: 50px;
+    background-color: #00a0f0;
+    border-radius: 10px;
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 50px;
+    font-weight: bolder;
+    margin-top: 10px;
+  }
+}

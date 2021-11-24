@@ -1,0 +1,152 @@
+/* =========== 以下正式css ================================= */
+.MOL {
+  /*  搜尋按鈕 */
+  .search-computer {
+    position: relative;
+    width: 90%;
+    margin-bottom: 35px;
+  }
+
+  .search-computer .search-input {
+    height: 38px;
+    width: 314px;
+    border-radius: 50px;
+    font-size: 18px;
+    padding-right: 60px;
+    padding-left: 30px;
+    /* 不設定mb0會被其他css影響 */
+    margin-left: auto;
+    margin-bottom: 0;
+    line-height: 38px;
+  }
+
+  .search-computer .search-button {
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    background-color: transparent;
+    border: none;
+    width: 23px;
+    height: 23px;
+  }
+
+  .search-computer .search-button img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .select-order {
+    height: 38px;
+    border-radius: 5px;
+  }
+  .list-control-box {
+    padding: 15px 0;
+    font-size: 20px;
+  }
+  .icon-group {
+    text-align: left;
+  }
+  .icon {
+    margin-bottom: 5px;
+  }
+
+  .excel {
+    color: green;
+  }
+  .delete {
+    color: red;
+  }
+
+  
+
+  /* 按鈕區 */
+  .text .buttons {
+    width: 16%;
+  }
+
+  /* 按鈕排列 */
+  .buttons {
+    justify-content: center;
+  }
+
+  /* 按鈕樣式 */
+  .buttons .edit,
+  .buttons .delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00a0f0;
+    height: 30px;
+    width: 45px;
+    border-radius: 10px;
+    margin: 0 20px;
+  }
+
+  /* 刪除按鈕顏色 */
+  .buttons .delete {
+    background-color: #ff5252;
+  }
+
+  /* 包覆白色icon 給予寬高 */
+  .buttons .edit div,
+  .buttons .delete div {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
+
+  .field-content-box .spinner-grow{
+    margin: 50px auto;
+  }
+
+
+  @media screen and (max-width: 376px) {
+    .search-computer {
+      display: flex;
+      width: 100%;
+      margin: 0 0 10px ;
+    }
+    .search-computer .search-input {
+      height: 38px;
+      width: 100%;
+      border-radius: 50px;
+      font-size: 18px;
+      padding-right: 60px;
+      padding-left: 30px;
+      /* 不設定mb0會被其他css影響 */
+      margin-left: auto;
+      margin-bottom: 0;
+      line-height: 38px;
+    }
+    
+    .field-content-box {
+      background-color: #ebf8fda1;
+      font-size: 10px;
+    }
+    .field-content {
+      font-size: 16px;
+      line-height: 25px;
+      border-bottom: 1px solid #00a0f0;
+      padding: 15px;
+    }
+    .select-order {
+      width: 100%;
+      height: 38px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    .list-control-box {
+      padding: 0;
+      font-size: 20px;
+    }
+    .icon-group {
+      text-align: right;
+    }
+    .icon {
+      font-size: 30px;
+    }
+    .excel {
+      margin-right: 10px;
+    }
+  }
+}

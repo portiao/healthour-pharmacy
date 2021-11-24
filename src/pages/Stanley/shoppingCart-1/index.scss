@@ -1,0 +1,129 @@
+.empty-cart {
+  width: 150px;
+  margin: 30px auto 5px;
+  transform: translateX(-20px);
+}
+
+.empty-cart img {
+  width: 100%;
+}
+
+.go-shop-btn {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(235, 138, 73);
+  border-radius: 30px;
+  line-height: 50px;
+  margin: 30px auto;
+  color: white;
+}
+
+.go-shop-btn:hover {
+  background-color: rgb(243, 113, 26);
+  color: white;
+}
+
+.arrow-right {
+  margin-left: 20px;
+  margin-bottom: 3px;
+}
+
+@media screen and (max-width: 375px) {
+  .empty-cart {
+    width: 120px;
+    margin: 30px auto 5px;
+    transform: translateX(-10px);
+  }
+
+  .empty-cart img {
+    width: 100%;
+  }
+}
+.SC1 {
+  /* 送貨及付款方式 */
+  .delivery-payment-box {
+    height: 430px;
+    outline: 1px solid #ecebeb;
+  }
+
+  /* 共用的title大小 */
+  .delivery-payment-title,
+  .summary-title {
+    width: 100%;
+    height: 70px;
+    background-color: #ecebeb;
+    font-size: 30px;
+    line-height: 70px;
+    padding-left: 25px;
+  }
+
+  .dp-select-area {
+    padding: 15px 25px;
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  select {
+    width: 100%;
+    height: 65px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #aaa8a8;
+    padding: 0 15px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* =========== 手機版 ================ */
+
+  /* 購物車 */
+  @media screen and (max-width: 376px) {
+    /* 送貨及付款方式 */
+    .delivery-payment-box {
+      height: auto;
+      outline: 1px solid #ecebeb;
+      margin-bottom: 30px;
+    }
+
+    /* 共用的title大小 */
+    .delivery-payment-title,
+    .summary-title {
+      width: 100%;
+      height: 45px;
+      background-color: #ecebeb;
+      font-size: 18px;
+      line-height: 45px;
+      padding-left: 15px;
+    }
+
+    .dp-select-area {
+      padding: 15px;
+      font-size: 16px;
+    }
+    .subtitle {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    /* 選擇框大小 */
+    .dp-select {
+      width: 100%;
+      height: 55px;
+      margin-bottom: 15px;
+    }
+
+    select {
+      width: 100%;
+      height: 55px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #aaa8a8;
+      padding: 0 15px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+}

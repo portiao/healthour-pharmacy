@@ -1,0 +1,35 @@
+.banner {
+    position: relative;
+    height: 150px;
+    margin-bottom: 40px;
+}
+
+.banner .text {
+    display:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.banner .title {
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+.banner .cate {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+    .banner {
+        height: 320px;
+        margin-bottom: 30px; 
+    }
+
+    .banner .text {
+        display: block;
+    }
+}

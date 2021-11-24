@@ -1,0 +1,69 @@
+.active{
+    width: 690px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.activeP1{
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    font-size:18px;
+}
+.activeP2{
+    margin: 0;
+    font-size:25px;
+    padding-top: 10px;
+}
+
+.activeNews{
+    font-size: 18px;
+    color: #FF5252;
+}
+.activeNews>p{
+    margin-top: 0;
+    margin: 0 20px;
+}
+
+/* 往上按鈕 */
+.activeLine{
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+/* 往下按鈕 */
+.activeLine2{
+    /* padding-bottom: 20px; */
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+
+@media  screen and (max-width:375px) {
+    /* 活動頁面字體大小 */
+    .activeNews>p{
+        margin: 0;
+    }
+    .activeNews>p, .activeP1, .activeP2{
+        font-size:6px;
+    }
+    .activeLine, .activeLine2, .active{
+        padding: 0;
+        margin: 0;
+    }
+    .activeP1{
+        padding-bottom: 5px;
+    }
+    .activeP2{
+        padding-top: 5px;
+    }
+    .active {
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,35 @@
+ .pagination-wrap{
+     margin-bottom: 35px
+ }
+ 
+ /* 按鈕li */
+ li.page-item {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /* 按鈕a，邊框 */
+ a.page-link {
+     border: none;
+     margin: .175rem .5rem;
+     color: #000;
+
+ }
+
+ /* 自行添加的class，不影響上下按鈕 */
+ a.number-btn {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     width: 30px;
+     height: 30px;
+     color: #000;
+ }
+
+ .page-item.active .page-link{
+     background-color: #ADD5F5;
+     border-color: #ADD5F5;
+     color: #000;
+ }

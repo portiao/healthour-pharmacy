@@ -1,0 +1,78 @@
+.spinner {
+  margin: 20px 50%;
+}
+
+.line-chart {
+  border: 1px solid #ecebeb;
+  border-radius: 10px;
+}
+
+.line-chart .title {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  background-color: #ecebeb;
+}
+
+.control-arrow {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.pointer:hover{
+  color: rgb(83, 156, 224);
+}
+
+.chart-content {
+  padding: 10px;
+}
+
+.product-sales-box {
+  width: 100%;
+  border: 1px solid #ecebeb;
+  border-radius: 10px;
+}
+
+.product-sales-box .title {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  background-color: #ecebeb;
+}
+
+.product-sales-box .subtitle {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.product-sales-box .content {
+  padding: 10px;
+  height: 40px;
+}
+
+.product-sales-box .col-2,
+.col-7 {
+  padding-right: 0px;
+}
+
+
+
+.line-chart {
+  position: relative;
+}
+
+.content-box li:nth-child(odd) {
+  background-color: rgba(255, 235, 205, 0.411);
+}
+
+.product-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

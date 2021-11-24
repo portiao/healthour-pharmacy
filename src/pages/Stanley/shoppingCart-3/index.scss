@@ -1,0 +1,38 @@
+.SC3 {
+  /* =========== 以下正式css ================================= */
+}
+
+/* 完成訂單文字 */
+.finished-word {
+  width: 940px;
+  margin: auto;
+  font-size: 30px;
+  line-height: 45px;
+  margin-bottom: 30px;
+}
+
+.finished-icon {
+  color: green;
+  margin-right: 10px;
+  margin-bottom: 7px;
+}
+
+.link-style {
+  color: #00a0f0;
+}
+@media screen and (max-width: 376px) {
+  /* 完成訂單文字 */
+  .finished-word {
+    width: auto;
+    margin: auto;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .finished-icon {
+    color: green;
+    margin-right: 5px;
+    margin-bottom: 3px;
+  }
+}

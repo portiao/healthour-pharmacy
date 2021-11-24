@@ -1,0 +1,34 @@
+/* 手機 頁簽 */
+ .cate-button {
+    display: block;
+    border-bottom: 3px solid #00A0F0;
+    margin-bottom: 20px;
+}
+
+/* 頁簽按鈕樣式 */
+ .cate-button .cate,
+ .cate-button .body {
+    display: inline-block;
+    width: 100%;
+    background-color: #C0C9D0;
+    text-align: center;
+    padding: 18px 0;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* 點擊按鈕後樣式 */
+ .cate-button .cate.now,
+ .cate-button .body.now {
+    background-color: #66CBFF;
+}
+
+
+@media screen and (min-width: 992px) {
+
+    /* 桌機時關閉 */
+     .cate-button {
+        display: none;
+    }
+}

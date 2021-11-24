@@ -1,0 +1,117 @@
+/* =========== 以下正式css ================================= */
+
+
+
+.order-detail-box {
+  width: 100%;
+  outline: 1px solid #ecebeb;
+}
+
+.order-detail-title {
+  width: 100%;
+  height: 70px;
+  background-color: #ecebeb;
+  font-size: 30px;
+  line-height: 70px;
+  padding-left: 25px;
+}
+
+.order-detail-box .subtitle {
+  padding: 15px 25px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.detail-box {
+  padding: 0 0px 10px 25px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* 訂單明細 */
+.order-detail-box {
+  width: 100%;
+  outline: 1px solid #ecebeb;
+  margin-bottom: 50px;
+}
+
+.order-detail-title {
+  width: 100%;
+  height: 70px;
+  background-color: #ecebeb;
+  font-size: 24px;
+  line-height: 70px;
+  padding: 0 25px;
+}
+
+.detail-box {
+  padding: 0 0px 10px 25px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.red-word {
+  color: red;
+}
+
+.save-change-box {
+  padding: 25px;
+}
+.save-change-btn {
+  color: white;
+  font-size: 20px;
+  width: 110px;
+  line-height: 40px;
+  text-align: center;
+  height: 40px;
+  background-color: #00a0f0;
+  border-radius: 10px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 376px) {
+  
+
+  .order-detail-box {
+    width: 100%;
+    outline: 1px solid #ecebeb;
+  }
+
+  .order-detail-title {
+    width: 100%;
+    height: 45px;
+    background-color: #ecebeb;
+    font-size: 18px;
+    line-height: 45px;
+    padding-left: 15px;
+  }
+
+  .order-detail-box .subtitle {
+    padding: 15px 15px 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .detail-box {
+    padding: 0 0px 10px 15px;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+
+  .save-change-box {
+    padding: 25px;
+  }
+  .save-change-btn {
+    color: white;
+    font-size: 16px;
+    width: 110px;
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    background-color: #00a0f0;
+    border-radius: 10px;
+    margin-left: auto;
+  }
+}

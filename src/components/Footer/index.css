@@ -1,0 +1,161 @@
+footer{
+  position:relative;
+  background-color: #66CBFF;
+  margin-top: 80px;
+}
+
+/* 回到頂部 */
+footer .return-top {
+  position:absolute;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+/* 主體 */
+footer .main {
+  padding: 45px 15px 35px;
+}
+
+footer .email {
+  margin-bottom: 75px;
+}
+
+footer .email .title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 18px;
+  color:#000;
+}
+
+/* 裝input和button */
+footer .email .email-box {
+  height: 40px;
+  display:flex;
+  justify-content:center;
+  
+}
+
+/* 輸入框 */
+footer .email .email-input {
+  height: 100%;
+  border:none;
+  outline:none;
+  flex:1;
+  box-shadow:0 4px 0 rgba(0, 0, 0, .25);
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+/* 黑色按鈕 */
+footer .email .email-button {
+  border:none;
+  background-color: #000;
+  color:#fff;
+  box-shadow:0 4px 0 rgba(0, 0, 0, .25);
+  padding: 0 19px;
+  font-size: 15px;
+}
+
+/* 站內連結 */
+footer .link-area {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* 分成上下兩邊 (手機) */
+footer .link-area .top,
+footer .link-area .bottom {
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* 下方的不給mb */
+footer .link-area .bottom {
+  margin-bottom: 0;
+}
+
+/* 每個連結給mb10 */
+footer .link-area div p {
+  margin-bottom: 10px;
+}
+
+/* 連結文字樣式 */
+footer .link-area div p a {
+  color:#000;
+  font-size: 18px;
+}
+
+/* 第一個文字加粗 */
+footer .link-area div p:first-child a {
+  color:#000;
+  font-weight: 700;
+}
+
+footer .copyright {
+  background-color: #00A0F0;
+  color:#fff;
+  text-align: center;
+  padding: 30px 0 100px;
+}
+
+@media screen and (min-width: 992px) {
+  /* 返回icon放大 */
+  footer .return-top {
+    width: 46px;
+    height: 46px;
+  }
+
+  /* 主體區寬度縮小 */
+  footer .main {
+    width: 652px;
+    padding: 60px 15px 35px;
+    margin: auto;
+  }
+
+  /* 標題置左 */
+  footer .email .title {
+    text-align: left;
+  }
+
+  /* 修改高度 */
+  footer .email .email-box {
+    height: 65px;
+  }
+
+  /* footer .email .email-input {
+    height: 100%;
+  } */
+
+  /* 修改按鈕樣式 */
+  footer .email .email-button {
+    padding: 0 60px;
+    font-size: 20px;
+  }
+
+  /* 連結不換行 */
+  footer .link-area {
+    flex-wrap: nowrap;
+  }
+
+  /* 桌機 連結不給mb */
+  footer .link-area .top {
+    margin-bottom: 0;
+  }
+
+  /* 桌機 隱藏下方連結 */
+  footer .link-area .bottom {
+    display: none;
+  }
+
+  /* 修改樣式 */
+  footer .copyright {
+    font-size: 25px;
+    padding: 30px 0;
+  }
+
+}

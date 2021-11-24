@@ -1,0 +1,368 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+ul,
+ol {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
+/* 關閉側邊類別欄 */
+.productsFirstPage .aside-cate {
+  display: none;
+}
+
+.productsFirstPage .main {
+  width: 100%
+}
+
+@media screen and (min-width: 992px) {
+  /* 側邊欄和主區域水平flex */
+  .productsFirstPage {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* 側邊欄寬度 */
+  .productsFirstPage .aside-cate {
+    display: block;
+    width: calc(20% - 15px);
+  }
+
+  /* 主區域寬度 */
+  .productsFirstPage .main {
+    width: calc(80% - 15px);
+  }
+
+}
+
+/* 手機 主標題 */
+.productsFirstPage .main-title {
+  display: block;
+  margin-bottom: 35px;
+}
+
+/* 文字區域樣式 */
+.productsFirstPage .main-title .text {
+  position: relative;
+  background-color: #EEF7FC;
+  border-radius: 20px 0 20px 0;
+  padding: 5px 0;
+  width: 58%;
+  margin: 0 auto 10px;
+}
+
+/* 線 */
+.productsFirstPage .main-title .line {
+  background-color: #66CBFF;
+  width: 100%;
+  height: 1px;
+}
+
+/* 文字樣式 */
+.productsFirstPage .main-title .text p {
+  position: relative;
+  color: #00A0F0;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 橫條前方的粗線 */
+.productsFirstPage .main-title .text p::after {
+  content: '';
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  background-color: #66CBFF;
+  width: 5px;
+  height: 25px;
+}
+
+@media screen and (min-width: 992px) {
+  .productsFirstPage .main-title {
+    display: none;
+  }
+}
+
+/* 熱門商品 標題  */
+.productsFirstPage .hot>.title {
+  display: flex;
+  align-items: center;
+  background-color: #F5F5F5;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.productsFirstPage .hot>.title .notebook-icon {
+  width: 10%;
+  height: 70%
+}
+
+.productsFirstPage .hot>.title .circle-icon {
+  width: 10%;
+  height: 70%
+}
+
+.productsFirstPage .hot>.title .text p {
+  color: #000;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 992px) {
+
+  .productsFirstPage .hot>.title .notebook-icon {
+    width: 5%;
+    height: 5%;
+  }
+
+
+  .productsFirstPage .hot>.title .circle-icon {
+    width: 5%;
+    height: 5%;
+  }
+
+
+  .productsFirstPage .hot>.title .text p {
+    font-size: 25px;
+  }
+}
+
+/* 手機 頁簽 */
+.productsFirstPage .cate-button {
+  display: block;
+  border-bottom: 3px solid #00A0F0;
+  margin-bottom: 20px;
+}
+
+/* 頁簽按鈕樣式 */
+.productsFirstPage .cate-button .cate,
+.productsFirstPage .cate-button .body {
+  display: inline-block;
+  width: 100%;
+  background-color: #C0C9D0;
+  text-align: center;
+  padding: 18px 0;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* 點擊按鈕後樣式 */
+.productsFirstPage .cate-button .cate.now,
+.productsFirstPage .cate-button .body.now {
+  background-color: #66CBFF;
+}
+
+
+@media screen and (min-width: 992px) {
+  /* 桌機時關閉 */
+  .productsFirstPage .cate-button {
+    display: none;
+  }
+}
+
+/* 桌機 頁簽 */
+.productsFirstPage .cate-button-computer {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  /* 開啟頁簽 */
+  .productsFirstPage .cate-button-computer {
+    display: flex;
+    border-bottom: 6px solid #1295DF;
+    margin-bottom: 15px;
+  }
+
+  /* 頁簽按鈕樣式 */
+  .productsFirstPage .cate-button-computer .cate-option div,
+  .productsFirstPage .cate-button-computer .body-option div {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #66CBFF;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  /* 點擊按鈕後樣式 */
+  .productsFirstPage .cate-button-computer .cate-option div.now,
+  .productsFirstPage .cate-button-computer .body-option div.now {
+    background-color: #00A0F0;
+  }
+
+  /* body ml15 */
+  .productsFirstPage .cate-button-computer .body-option div {
+    margin-left: 15px;
+  }
+}
+
+/* 商品類別icon顯示區 start */
+
+/* icon水平換行排列 */
+.productsFirstPage .category-show-area .item-group-cate,
+.productsFirstPage .category-show-area .item-group-body {
+  display: none;
+}
+
+/* icon區域顯示切換 */
+.productsFirstPage .category-show-area .item-group-cate.now,
+.productsFirstPage .category-show-area .item-group-body.now {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.productsFirstPage .category-show-area .item-group-cate {
+  justify-content: space-between;
+}
+
+/* 類別icon寬度 */
+.productsFirstPage .category-show-area .item-group-cate>a {
+  width: calc(50% - 15px);
+}
+
+/* body icon寬度 */
+.productsFirstPage .category-show-area .item-group-body>a {
+  width: calc(33.333% - 10px);
+  margin: 0 5px;
+}
+
+/* icon樣式 */
+.productsFirstPage .item-group-cate .item,
+.productsFirstPage .item-group-body .item {
+  box-shadow: 0 4px 0 rgba(0, 0, 0, .25);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.productsFirstPage .item-group-cate .arrow,
+.productsFirstPage .item-group-body .arrow {
+  display:none;
+  width: 11px;
+  height: 23px;
+}
+
+/* icon藍色箭頭 */
+.productsFirstPage .item-group-cate .item .icon,
+.productsFirstPage .item-group-body .item .icon {
+  width: 70%;
+  margin: 0 auto 10px;
+}
+
+/* icon名字 */
+.productsFirstPage .item-group-cate .item .name,
+.productsFirstPage .item-group-body .item .name {
+  color: #000;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* body icon名字縮小 */
+.productsFirstPage .item-group-body .item .name {
+  font-size: 16px;
+}
+
+/* 初始狀態不顯示body icon */
+.productsFirstPage .category-show-area .item-group-body{
+  display:none
+}
+
+@media screen and (min-width:992px) {
+  /* 桌機flex水平icon內部 */
+  .productsFirstPage .item-group-cate .item,
+  .productsFirstPage .item-group-body .item {
+    display: flex;
+    align-items: center;
+  }
+
+  /* 類別 icon圖案大小 */
+  .productsFirstPage .item-group-cate .item .icon{
+    width: 100px;
+    height: 100px;
+  }
+
+  /* body icon圖案大小 */
+  .productsFirstPage .item-group-body .item .icon {
+    width: 70px;
+    height: 70px;
+  }
+ 
+  /* 開啟藍色箭頭 */
+  .productsFirstPage .item-group-cate .arrow,
+  .productsFirstPage .item-group-body .arrow {
+    display: block;
+    margin-left: 60px;
+  }
+
+  .productsFirstPage .item-group-body .arrow {
+    margin-left: 50px;
+  }
+
+  /* 放大icon文字 */
+  .productsFirstPage .item-group-cate .item .name,
+  .productsFirstPage .item-group-body .item .name {
+    font-size: 25px;
+  }
+
+  /* 放大icon文字 */
+  .productsFirstPage .item-group-body .item .name {
+    font-size: 22px;
+  }
+}
+/* 商品類別icon顯示區 end */
+
+/* 桌機 追蹤商品 */
+.productsFirstPage .browse-record-item-group {
+  display: none;
+}
+
+@media screen and (min-width:992px) {
+  .productsFirstPage .browse-record-item-group {
+    display: flex;
+  }
+
+  .productsFirstPage .browse-record-item-group>a {
+    width: calc(25% - 10px);
+    margin: 0 5px;
+  }
+
+  .productsFirstPage .browse-record-item-group .product .item {
+    width: 100%
+  }
+
+  /* 隱藏手機輪播 */
+  .browseRecordSlider{
+    display: none;
+  }
+}

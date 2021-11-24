@@ -1,0 +1,69 @@
+/*單一卡片外框*/
+.chiao-storeAllPos {
+  width: auto;
+  /* height: 220px; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 15px;
+  line-height: 30px;
+}
+
+.chiao-storeAllPos p{
+  margin-bottom: 0;
+}
+
+.chiao-storeInPos {
+  width: 330px;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/*線*/
+.chiao-linePosStoes {
+  width: 5px;
+  height: 30px;
+  background-color: #00a0f0;
+  margin-right: 10px;
+}
+
+/*店名*/
+.chiao-storeNamePos {
+  font-size: 22px;
+  color: #00a0f0;
+}
+
+/*地址卡片*/
+.chiao-addressCardPos {
+  font-size: 18px;
+  display: flex;
+  align-content: center;
+}
+/*地址名稱*/
+.chiao-addressNamePos {
+  /* width: 80px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*地圖icon*/
+.chiao-mapLocationStore {
+  color: none;
+  text-decoration: none;
+}
+
+.chiao-mapIconLarge {
+  width: 22px;
+  height: auto;
+}
+
+.chiao-storeNameMapT {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+}

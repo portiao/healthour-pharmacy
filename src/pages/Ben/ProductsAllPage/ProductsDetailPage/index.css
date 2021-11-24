@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+ul,
+ol {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 0;
+}
+
+/* 關閉側邊欄 */
+.productsDetailPage .aside-cate {
+    display: none;
+}
+
+.productsDetailPage .main {
+    width: 100%;
+}
+
+.BsFillCheckCircleFill{
+    color: green;
+    font-size: 22px;
+}
+@media screen and (min-width: 992px) {
+
+    /* 頁面水平 */
+    .productsDetailPage {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* 開啟側邊欄 + 寬度*/
+    .productsDetailPage .aside-cate {
+        display: block;
+        width: calc(20% - 15px);
+    }
+
+    /* 主體寬度 */
+    .productsDetailPage .main {
+        width: calc(80% - 15px);
+    }
+
+}
+
+/* 載入中 */
+.productsDetailPage .spinner-grow {
+    margin: 10px auto
+}
+
+/* 上方商品資訊 */
+.productsDetailPage .main .product-area {
+    margin-bottom: 40px;
+}
+
+/* 商品大圖 */
+.productsDetailPage .product-area .pic {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto 20px;
+}
+
+/* 桌機和手機 藍色標題 */
+.productsDetailPage .product-area .title,
+.productsDetailPage .title-blue-computer {
+    height: auto;
+    background-color: rgba(102, 204, 255, .55);
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin-bottom: 15px;
+    color:#000;
+}
+
+#title-blue-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+@media screen and (min-width: 992px) {
+    #title-blue-mobile {
+        display: none;
+        
+    }
+}
+
+/* 結帳方式和付款方式 樣式 */
+.productsDetailPage .product-area .payment,
+.productsDetailPage .product-area .delivery {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.productsDetailPage .product-area .delivery {
+    margin-bottom: 30px;
+}
+
+/* 數量和售價 */
+.productsDetailPage .product-area .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* 售價 */
+.productsDetailPage .product-area .price {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.price.line-through {
+    text-decoration: line-through;
+}
+
+/* 特惠價 */
+.productsDetailPage .product-area .special-offer {
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* 數量option文字置中 */
+.productsDetailPage .product-area .count option {
+    text-align: center;
+}
+
+/* 按鈕區 */
+.productsDetailPage .product-area .button-area {
+    display: flex;
+    justify-content: space-around
+}
+
+/* 按鈕樣式 */
+.productsDetailPage .product-area .follow-button,
+.productsDetailPage .product-area .cancel-follow-button,
+.productsDetailPage .product-area .cart-button,
+.productsDetailPage .product-area .cancel-cart-button {
+    width: 133px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #00A0F0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.productsDetailPage .product-area .cart-button,
+.productsDetailPage .product-area .cancel-cart-button {
+    background-color: #FF5252;
+}
+
+.productsDetailPage .product-area .cancel-follow-button,
+.productsDetailPage .product-area .cancel-cart-button {
+    display: none;
+}
+
+.productsDetailPage .product-area .follow-button.hide,
+.productsDetailPage .product-area .cart-button.hide {
+    display: none;
+}
+
+.productsDetailPage .product-area .cancel-follow-button.show,
+.productsDetailPage .product-area .cancel-cart-button.show {
+    display: block;
+}
+
+
+
+@media screen and (min-width:992px) {
+    .productsDetailPage .title-blue-computer {
+        margin-bottom: 40px;
+    }
+
+    /* 桌機 上方商品資訊 圖片和內容水平*/
+    .productsDetailPage .main .product-area {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    .productsDetailPage .main .product-area .content {
+        width: 50%;
+    }
+
+    /* 桌機 黑色大標題 */
+    .title-computer {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    /* 桌機按鈕區域 靠左 */
+    .productsDetailPage .product-area .button-area {
+        display: flex;
+        justify-content: flex-start
+    }
+
+    /* 按鈕ml推出間隔 */
+    .productsDetailPage .product-area .cart-button,
+    .productsDetailPage .product-area .cancel-cart-button {
+        margin-left: 40px;
+    }
+
+    .productsDetailPage .product-area .price {
+        text-align: left;
+    }
+
+    /* 特惠價 */
+    .productsDetailPage .product-area .special-offer {
+        justify-content: flex-start;
+        margin: 0 0 24px 0;
+    }
+}
+
+/* 頁簽 */
+.info-button {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 6px solid #00A0F0;
+}
+
+/* 頁簽個別寬度 */
+.info-button .spec,
+.info-button .delivery-notice,
+.info-button .return-notice {
+    width: calc(33.3333% - 5px);
+}
+
+/* 頁簽樣式 */
+.info-button .spec div,
+.info-button .delivery-notice div,
+.info-button .return-notice div {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    height: 39px;
+    line-height: 42px;
+    background-color: #66CBFF;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 頁簽點擊後添加now */
+.info-button .spec div.now,
+.info-button .delivery-notice div.now,
+.info-button .return-notice div.now {
+    background-color: #00A0F0;
+}
+
+
+/* 內容區域 */
+.info-content {
+    margin-bottom: 25px;
+}
+
+/* 標題 */
+.info-content h4 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* 內文 */
+.info-content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* 最後一個p標籤不用mb */
+.info-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* 內文樣式 */
+.info-content .spec-content,
+.info-content .delivery-notice-content,
+.info-content .return-notice-content {
+    display: none;
+    padding: 25px 10px;
+    background-color: #EEF7FC;
+}
+
+/* 送貨和退貨需知樣式調整 */
+.info-content .spec-content,
+.info-content .delivery-notice-content,
+.info-content .return-notice-content {
+    position: relative;
+    line-height: 38px;
+}
+
+/* 內容區顯示切換 */
+.info-content .spec-content.show,
+.info-content .delivery-notice-content.show,
+.info-content .return-notice-content.show {
+    display: block;
+}
+
+/* icon */
+.info-content .delivery-notice-content .icon,
+.info-content .return-notice-content .icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 65px;
+    height: 50px;
+}
+
+/* icon img中心往上 */
+.info-content .return-notice-content .icon img {
+    object-position: 10% 10%;
+}
+
+/* 每個輪播mb25px */
+.productsDetailPage .slick-slider {
+    margin-bottom: 25px;
+}
+
+/* 最底下的其他人也看過輪播mb0 */
+.productsDetailPage .otherProductsSlider{
+     margin-bottom:0;
+}
+
+/* 桌機 追蹤商品 */
+.productsDetailPage .browse-record-item-group {
+    display: none;
+}
+
+@media screen and (min-width:992px) {
+    .productsDetailPage .browse-record-item-group {
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+    .productsDetailPage .browse-record-item-group>a {
+        width: calc(25% - 10px);
+        margin: 0 5px;
+    }
+
+    .productsDetailPage .browse-record-item-group .product .item {
+        width: 100%
+    }
+
+    /* 隱藏手機輪播 */
+    .productsDetailPage .browseRecordSlider {
+        display: none;
+    }
+}

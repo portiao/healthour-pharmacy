@@ -1,0 +1,52 @@
+.newsTitle{
+    font-size: 40px;
+    margin: 30px 0;
+}
+
+/* -消息專區 NEWS- */
+.text-divider2{
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    color: #C4C4C4;
+    --text-divider-gap: 1rem;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.text-divider2::before,
+.text-divider2::after{
+    content: '';
+    height: 1px;
+    background-color: #C4C4C4;
+    width: 320px;
+}
+.text-divider2::before {
+    margin-right: var(--text-divider-gap);
+}
+  .text-divider2::after {
+    margin-left: var(--text-divider-gap);
+}
+
+
+.allNews{
+    display: flex;
+    justify-content: center;
+}
+/*醫生照片*/
+.doctorPic img{
+    width:auto;
+    height: 547px;
+}
+
+.newPadding{
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 1150px) {
+    .doctorPic img{
+        display: none;
+    }
+    .newPadding{
+        padding-left: 0px;
+    }
+}

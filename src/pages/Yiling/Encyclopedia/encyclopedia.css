@@ -1,0 +1,95 @@
+/* -保健百科- */
+.text-divider3 {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  color: black;
+  --text-divider-gap: 1rem;
+  justify-content: center;
+}
+.text-divider3::before,
+.text-divider3::after {
+  content: "";
+  height: 1px;
+  background-color: #c4c4c4;
+  width: 318px;
+}
+.text-divider3::before {
+  margin-right: var(--text-divider-gap);
+}
+.text-divider3::after {
+  margin-left: var(--text-divider-gap);
+}
+
+/*title距離*/
+.encTitle {
+  margin: 30px 0;
+}
+
+/*保健百科圖*/
+.allIcon {
+  width: 150px;
+  height: 150px;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px #c4c4c4;
+  margin: 0 20px 20px 20px;
+  cursor: pointer;
+}
+.liImg img {
+  width: 40%;
+  height: 40%;
+}
+.chandePageEnc {
+  text-decoration: none;
+  color: black;
+
+  /* 因為a連結所以要置中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.line1icon {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 950px;
+}
+.forIconList {
+  display: flex;
+  justify-content: center;
+}
+
+.liImg p {
+  padding-top: 20px;
+}
+
+.allIcon:hover{
+  background-color: #c4c4c4;
+}
+
+
+
+@media screen and (max-width: 1150px) {
+  /* -保健百科- */
+  .text-divider3 {
+    font-size: 28px;
+  }
+  .text-divider3::before,
+  .text-divider3::after {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* -保健百科- */
+  .allIcon {
+    margin: 0 10px 20px 10px;
+    cursor: pointer;
+  }
+}

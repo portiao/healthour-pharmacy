@@ -1,0 +1,44 @@
+.search {
+    display: flex;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.search .search-input {
+    height: 55px;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 18px;
+    padding-right:60px;
+    padding-left:30px;
+    /* 不設定mb0會被其他css影響 */
+    margin-bottom: 0;
+    outline:none;
+}
+
+/* 不設定mb0會被其他css影響 */
+.main .search-input:last-of-type {
+    margin-bottom: 0;
+}
+
+.search .search-button {
+    position: absolute;
+    right: 5%;
+    top: 18%;
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+.search .search-button img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 992px) {
+    .search {
+        display: none;
+    }
+
+}

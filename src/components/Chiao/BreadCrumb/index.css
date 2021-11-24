@@ -1,0 +1,40 @@
+.chiao-breadcrumb{
+  width:100%;
+  margin:auto;
+  display:flex;
+  background-color: #fff;
+  margin-bottom: 30px;
+  margin-top: -20px;
+}
+
+.chiao-breadcrumb a:hover{
+  color: #fff;
+  border-radius: 35px;
+  background-color:#82ccdd;
+  padding: 5px 10px;
+}
+
+
+.chiao-breadcrumb li + li:before{
+  content: '/';
+  color: #7F7F7F;
+  margin-right: 10px;
+}
+
+.chiao-breadcrumb li{
+  padding: 0 10px;
+  color: #00A0F0;
+  padding-left: 0;
+}
+
+
+
+
+
+@media  screen and (max-width:992px) {
+  .chiao-breadcrumb{
+    width: 200px;
+    margin-left: 15px;
+  }
+
+}

@@ -1,0 +1,55 @@
+.moveProduct {
+  margin-left: 50px;
+  /* width: 100%; */
+}
+
+.cardBackColor {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px #c4c4c4;
+}
+.forPic {
+  display: flex;
+  justify-content: center;
+}
+.forPic img {
+  width: 80%;
+}
+
+.forWord p {
+  font-size: 18px;
+}
+.forWord {
+  background-color: #c0c9d0;
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+  border-radius: 15px;
+}
+
+/*數字*/
+.coverNumber {
+  width: 60px;
+  line-height: 60px;
+  background-color: #00a0f0;
+  border-radius: 0 15px 15px 15px;
+}
+.coverNumber p {
+  font-size: 28px;
+  color: white;
+}
+
+/*設定number位置*/
+.coverNumber {
+  position: relative;
+  left: -30px;
+  top: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .moveProduct {
+    margin-left: 30px;
+  }
+}

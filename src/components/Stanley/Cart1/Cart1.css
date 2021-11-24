@@ -1,0 +1,82 @@
+/* 購物車欄位的最外框 */
+.cart-box {
+  width: 100%;
+  outline: 1px solid #ecebeb;
+  margin-bottom: 30px;
+}
+
+/* 購物車欄位 */
+.SC1 .cart-title {
+  width: 100%;
+  height: 70px;
+  background-color: #ecebeb;
+  font-size: 30px;
+  line-height: 70px;
+  padding-left: 25px; /* 依照設計搞，先統一pl-25 */
+}
+
+/* 購物車次欄位 */
+.cart-subtitle {
+  border-bottom: 1px solid #ecebeb;
+  padding: 0px 25px;
+  height: 65px;
+  font-size: 20px;
+  display: block;
+}
+
+/* 全站優惠 */
+.AllStore-discount-box {
+  padding: 10px 25px;
+  font-size: 18px;
+}
+.column-1 {
+  height: 30px;
+}
+.column-2 {
+  height: 40px;
+}
+.color-box {
+  width: 160px;
+  height: 40px;
+  background-color: #d7f1ff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 376px) {
+  /* 購物車 */
+  .SC1 .cart-title {
+    width: 100%;
+    height: 45px;
+    background-color: #ecebeb;
+    font-size: 18px;
+    line-height: 45px;
+    padding-left: 15px;
+  }
+  .cart-subtitle {
+    display: none;
+  }
+
+  /* 全站優惠 */
+  .AllStore-discount-box {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .color-box {
+    width: 100px;
+    height: 25px;
+    background-color: #d7f1ff;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  .column-1 {
+    height: 20px;
+  }
+  .column-2 {
+    height: 40px;
+  }
+}

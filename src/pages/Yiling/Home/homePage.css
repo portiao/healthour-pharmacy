@@ -1,0 +1,68 @@
+.homePage *, .homePage *::before, .homePage *::after {
+  box-sizing:content-box ;
+}
+
+
+
+/*避免出現滾軸*/
+:root {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/*限制手機板左右滑動*/
+body {
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+}
+
+.homePage {
+  text-align: center;
+}
+
+/* 改滾輪寬度 */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.aboutUsMM {
+  display: block;
+  margin-bottom: 200px;
+}
+.contentLink {
+  display: inline-flex;
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: 30px;
+}
+
+.jumpSco{
+  width: 50vw;
+  height: auto;
+}
+
+.cancelBtnN{
+  width: 5vw;
+  height: 5vw;
+  position: relative;
+  left: -2.5vw;
+  top: -2.5vw;
+}
+
+.activeBig{
+  background-color: rgba(0, 0, 0, 0.527);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 120px;
+  left: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancelMove{
+  display: flex;
+}

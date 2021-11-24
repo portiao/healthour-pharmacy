@@ -1,0 +1,11 @@
+.doctorCard img{
+    box-shadow: 0 5px #c4c4c4;
+    border-radius: 15px;
+}
+.slick-slide{
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+
+/*輪播牆*/

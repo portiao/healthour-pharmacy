@@ -1,0 +1,85 @@
+/* 結帳進度條 */
+.checkline-box {
+  width: 100%;
+  margin: 50px 0;
+  font-size: 22px;
+}
+.checkline-item {
+  width: 62px;
+}
+
+/* 1是深色正在進行的圓圈 */
+.checkline-circle-1 {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #00a0f0;
+  color: white;
+  text-align: center;
+  line-height: 62px;
+  margin-bottom: 10px;
+}
+
+/* 2是淺色尚未進行的圓圈 */
+.checkline-circle-2 {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #aad7ee;
+  color: white;
+  text-align: center;
+  line-height: 62px;
+  margin-bottom: 10px;
+}
+
+.checkline-line {
+  /* position: absolute; */
+  width: 186px;
+  height: 2px;
+  background-color: #aad7ee;
+  margin-top: 31px; /* 線要在圓心的一半 62/2=31 */
+}
+
+@media screen and (max-width: 376px) {
+  /* 結帳進度條 */
+  .checkline-box {
+    width: 100%;
+    margin: 30px 0;
+    font-size: 16px;
+  }
+  .checkline-item {
+    width: 45px;
+  }
+
+  /* 1是深色正在進行的圓圈 */
+  .checkline-circle-1 {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #00a0f0;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+
+  /* 2是淺色尚未進行的圓圈 */
+  .checkline-circle-2 {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #aad7ee;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+
+  .checkline-line {
+    /* position: absolute; */
+    width: 80px;
+    height: 2px;
+    background-color: #aad7ee;
+    margin-top: 22.5px; /* 線要在圓心的一半 62/2=31 */
+  }
+}

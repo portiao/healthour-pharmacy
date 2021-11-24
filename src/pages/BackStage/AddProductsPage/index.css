@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+ul,
+ol {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
+/* 自訂容器 */
+.container873 {
+  max-width: 873px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* 背景圖 */
+.addProductsPage .background {
+  background: url('http://localhost:3000/images/banner/banner3.jpg') no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.addProductsPage .main {
+  background-color: #fff;
+  border-radius: 31px;
+  padding: 60px 0;
+}
+
+/* 大標題 */
+.addProductsPage .main>.title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  border-bottom: 2px solid #66CBFF;
+  padding-bottom: 30px
+}
+
+/* 新增按鈕 */
+.addProductsPage button {
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  background-color: #00A0F0;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  border: none;
+  margin: 0 auto
+}
+
+.addProductsPage .auto-input {
+  margin: 0 auto 20px
+}
+
+/* 桌機 調整新增按鈕寬度 */
+@media screen and (min-width: 992px) {
+  .addProductsPage button {
+    width: 295px;
+  }
+
+  .addProductsPage .buttons {
+    display: flex;
+    justify-content:space-between
+  }
+
+  .addProductsPage .auto-input {
+    margin: 0 auto
+  }
+}

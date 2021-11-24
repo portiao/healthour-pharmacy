@@ -1,0 +1,56 @@
+.linkAgainst {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: visible;
+}
+
+.linkAgainst img {
+  width: 20vw;
+  height: auto;
+  padding: 0 30px;
+  cursor: pointer;
+  max-width: none;
+}
+
+/*動畫*/
+@keyframes linkAgainst {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+
+.linkAgainst:hover {
+  animation-play-state: paused;
+}
+
+.linkAgainst {
+  position: relative;
+  right: 0;
+  left: 0;
+  /*infinite 動畫一直撥放*/
+  animation: linkAgainst 20s linear infinite;
+  background-size: reverse;
+  animation-duration: 20s;
+}
+
+@media screen and (max-width: 1000px) {
+  .linkAgainst img {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .linkAgainst img {
+    width: 50vw;
+  }
+}
+
+/*a link跳轉其他頁面樣式修改 跟 contentLink1元件一樣*/
+.changeLinkTo {
+  color: none;
+  text-decoration: none;
+}
