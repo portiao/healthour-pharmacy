@@ -14,7 +14,7 @@ import NewPush from './components/NewPush' //最新消息頁籤
 import NavbarShopPush from './components/NavbarShopPush' //線上購物
 
 const halfCirclePic = 'http://localhost:3000/images/encyclopedia/halfcircle.png' //半圓的圖
-const LogoPic = 'http://localhost:3000/images/Logo.jpg' //Logo圖
+const LogoPic = 'homepagePath/images/Logo.jpg' //Logo圖
 
 function Navbar(props) {
   const {

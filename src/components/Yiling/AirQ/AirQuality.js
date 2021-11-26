@@ -54,11 +54,11 @@ function AirQuality(props) {
   //https://data.epa.gov.tw/api/v1/aqx_p_432?api_key=af2e94d5-755a-4e00-8fa5-bf85ffed4fa8
   const fetchAQI = async () => {
     if (true) {
-      // const result = await fetch(
-      //   `https://data.epa.gov.tw/api/v1/aqx_p_432?api_key=af2e94d5-755a-4e00-8fa5-bf85ffed4fa8`
-      // ).then((res) => res.json());
+      const result = await fetch(
+        `https://data.epa.gov.tw/api/v1/aqx_p_432?api_key=af2e94d5-755a-4e00-8fa5-bf85ffed4fa8`
+      ).then((res) => res.json());
 
-      let result = require('./aqx_p_432.json')
+      // let result = require('./aqx_p_432.json')
       let aqiApi = result.records
       // console.log(aqiApi)
       setAqi(0);//區域比對前先歸零
