@@ -48,7 +48,7 @@ function PortiaAllPage(props) {
         <Route path="/Select_shop">
           <Select_shop setCloseStore={setCloseStore} />
         </Route>
-        <Route exact path="/">
+        <Route exact path="/healthour-pharmacy">
           <HomePage
             updateBrowseRecordToLocalStorage={updateBrowseRecordToLocalStorage}
             dis={dis}
