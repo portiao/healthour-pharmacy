@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.css'
+import {PicPath} from '../Yiling/PortiaAllPage/PicPath'
 
 import { BsCart2 } from 'react-icons/bs' //購物車
 import { FaRegUserCircle } from 'react-icons/fa' //會員
@@ -13,8 +14,8 @@ import NavbarPush from './components/NavbarPush' //活動頁籤
 import NewPush from './components/NewPush' //最新消息頁籤
 import NavbarShopPush from './components/NavbarShopPush' //線上購物
 
-const halfCirclePic = 'http://portiao.github.io/healthour-pharmacy/images/encyclopedia/halfcircle.png' //半圓的圖
-const LogoPic = 'http://portiao.github.io/healthour-pharmacy/images/Logo.jpg' //Logo圖
+const halfCirclePic = `${PicPath}/images/encyclopedia/halfcircle.png` //半圓的圖
+const LogoPic = `${PicPath}/images/Logo.jpg` //Logo圖
 
 function Navbar(props) {
   const {
