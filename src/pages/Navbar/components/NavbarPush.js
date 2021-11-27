@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './navbarPush.css'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
+import {PicPath} from '../../Yiling/PortiaAllPage/PicPath' //http://portiao.github.io/healthour-pharmacy
 
 import { RiArrowDropRightLine } from 'react-icons/ri' //右邊箭頭
 
@@ -46,7 +47,7 @@ function NavbarPush() {
                   className="navChandePageEnc"
                 >
                   <img
-                    src={`http://localhost:3000/images/encyclopedia/${v.chName}.png`}
+                    src={`${PicPath}/images/encyclopedia/${v.chName}.png`}
                     alt={v.chName}
                   />
                   <p>{v.chName}</p>
@@ -109,7 +110,7 @@ function NavbarPush() {
         </div>
         <div className="arrowEnterAgain">
           <Link to={buttonIndex === 0 ? '/HealthEnCyc' : '/IconSearch_p1'}>
-            <img src="http://localhost:3000/images/photo/enter.png" alt="" />
+            <img src={`${PicPath}/images/photo/enter.png`}alt="" />
           </Link>
         </div>
       </div>

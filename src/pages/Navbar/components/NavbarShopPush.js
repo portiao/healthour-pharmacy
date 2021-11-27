@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './navbarShopPush.css'
 import { Link } from 'react-router-dom'
+import {PicPath} from '../../Yiling/PortiaAllPage/PicPath' //http://portiao.github.io/healthour-pharmacy
 
 import { RiArrowDropRightLine } from 'react-icons/ri' //右邊箭頭
 
@@ -81,7 +82,7 @@ function NavbarPush(props) {
               <div className="navliImg">
                 <Link to={`${v.enName}`} className="navChandePageEnc">
                   <img
-                    src={`http://localhost:3000/images/icon/${v.image}.png`}
+                    src={`${PicPath}/images/icon/${v.image}.png`}
                     alt={v.chName}
                   />
                   <p>{v.chName}</p>
@@ -110,7 +111,7 @@ function NavbarPush(props) {
               <div className="navliImg">
                 <Link to={`${v.enName}`} className="navChandePageEnc">
                   <img
-                    src={`http://localhost:3000/images/icon/${v.image}.png`}
+                    src={`${PicPath}/images/icon/${v.image}.png`}
                     alt={v.chName}
                   />
                   <p>{v.chName}</p>
@@ -133,7 +134,7 @@ function NavbarPush(props) {
               <div className="navliImg">
                 <Link to={`${v.enName}`} className="navChandePageEnc">
                   <img
-                    src={`http://localhost:3000/images/icon/${v.image}.png`}
+                    src={`${PicPath}/images/icon/${v.image}.png`}
                     alt={v.chName}
                   />
                   <p>{v.chName}</p>
@@ -189,7 +190,7 @@ function NavbarPush(props) {
               setControlSmallBody('')
             }}
           >
-            <img src="http://localhost:3000/images/photo/enter.png" alt="" />
+            <img src={`${PicPath}/images/photo/enter.png`} alt="" />
           </Link>
         </div>
       </div>
