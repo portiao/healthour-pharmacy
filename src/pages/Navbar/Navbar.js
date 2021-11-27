@@ -55,7 +55,7 @@ function Navbar(props) {
       >
         <div className="navbarDesTop">
           <div className="homeIconLogo">
-            <Link to="/">
+            <Link to="/healthour-pharmacy">
               <img src={LogoPic} alt="" />
             </Link>
           </div>

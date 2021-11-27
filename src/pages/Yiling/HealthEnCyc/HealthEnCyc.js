@@ -4,6 +4,7 @@ import { AiOutlineRight } from 'react-icons/ai'
 import { dataNameImport } from '../HealthEnIndex/HealthDatabase' //引入方法
 import _ from 'lodash' //引入方法函示庫，react內建不需安裝
 import './healthEnCyc.css'
+import {PicPath} from '../PortiaAllPage/PicPath' //http://portiao.github.io/healthour-pharmacy
 
 const iconList = [
   '心臟',
@@ -43,7 +44,7 @@ function HealthEnCyc() {
       <div>
         <img
           className="healthQPic"
-          src="http://localhost:3000/images/photo/jamie-street-vcn2ndJ5LwE-unsplash.jpg"
+          src={`${PicPath}/images/photo/jamie-street-vcn2ndJ5LwE-unsplash.jpg`}
           alt=""
         />
       </div>
@@ -110,10 +111,10 @@ function HealthEnCyc() {
                   <div className="liImg ">
                     <a
                       className="chandePageEnc"
-                      href={`http://localhost:3000/HealthEnIndex/${ChEn[i]}`}
+                      href={`${PicPath}/HealthEnIndex/${ChEn[i]}`}
                     >
                       <img
-                        src={`http://localhost:3000/images/encyclopedia/${v}.png`}
+                        src={`${PicPath}/images/encyclopedia/${v}.png`}
                         alt={v}
                       />
                       <p>{v}</p>
