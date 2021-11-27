@@ -1,6 +1,7 @@
 import React from "react";
 import "./encyclopedia.css";
 import { Link } from "react-router-dom";
+import {PicPath} from '../PortiaAllPage/PicPath'//引入http://portiao.github.io/healthour-pharmacy
 
 const iconList = [
   { enName: "/HealthEnIndex/heart", chName: "心臟" },
@@ -40,7 +41,7 @@ function Encyclopedia() {
                 {
                   <Link to={v.enName} className="chandePageEnc">
                     <img
-                      src={`http://localhost:3000/images/encyclopedia/${v.chName}.png`}
+                      src={`${PicPath}/images/encyclopedia/${v.chName}.png`}
                       alt={v.chName}
                     />
 
