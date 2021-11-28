@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import {PicPath} from '../PortiaAllPage/PicPath'
 //引入套件
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
@@ -110,13 +111,13 @@ export default class PopularProduct extends Component {
           </div>
           <div
             style={{
-              backgroundImage: `url(http://localhost:3000/images/photo/cloud.png)`,
+              backgroundImage: `url(${PicPath}/images/photo/cloud.png)`,
             }}
             className="cloud cloud-1"
           ></div>
           <div
             style={{
-              backgroundImage: `url(http://localhost:3000/images/photo/cloud.png)`,
+              backgroundImage: `url(${PicPath}/images/photo/cloud.png)`,
             }}
             className="cloud cloud-2"
           ></div>
