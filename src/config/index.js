@@ -3,6 +3,7 @@ export const debug = true
 export const devUrl = 'http://localhost:3000'
 export const prodUrl = 'http://www.abc.com'
 export const serUrl = 'http://www.abc.com'
+export const PicPath ='http://portiao.github.io/healthour-pharmacy'
 
 // breadcrumb use
 // export const pathnameList = ['/about', '/login', '/user-add', '/user-edit']

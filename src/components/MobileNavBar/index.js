@@ -8,6 +8,7 @@ import { HiOutlineMenu } from 'react-icons/hi'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 // 引入config.js，devUrl=http://localhost:3000
 import { devUrl } from '../../config'
+import { PicPath } from '../../config'
 
 function MobileNavBar(props) {
   // navbar主連結與子連結的標題、網址
@@ -86,7 +87,7 @@ function MobileNavBar(props) {
         <div className="header">
           <div className="d-flex">
             <div className="Logo-img">
-              <img className="logoCut" src={`${devUrl}/images/Logo.png`} alt="#" />
+              <img className="logoCut" src={`${PicPath}/images/Logo.png`} alt="#" />
             </div>
             <div className="icon-area">
               <HiOutlineMenu className="menu-icon" onClick={handleClose} />
