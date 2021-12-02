@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/healthour-pharmacy/static/css/main.0cd5d005.chunk.css",
+    "main.css": "/healthour-pharmacy/static/css/main.2488a347.chunk.css",
     "main.js": "/healthour-pharmacy/static/js/main.32c8164b.chunk.js",
     "main.js.map": "/healthour-pharmacy/static/js/main.32c8164b.chunk.js.map",
     "runtime-main.js": "/healthour-pharmacy/static/js/runtime-main.aa4b1c50.js",
@@ -12,7 +12,7 @@
     "static/js/3.94019f43.chunk.js.map": "/healthour-pharmacy/static/js/3.94019f43.chunk.js.map",
     "index.html": "/healthour-pharmacy/index.html",
     "static/css/2.048a98fc.chunk.css.map": "/healthour-pharmacy/static/css/2.048a98fc.chunk.css.map",
-    "static/css/main.0cd5d005.chunk.css.map": "/healthour-pharmacy/static/css/main.0cd5d005.chunk.css.map",
+    "static/css/main.2488a347.chunk.css.map": "/healthour-pharmacy/static/css/main.2488a347.chunk.css.map",
     "static/js/2.bdffe81a.chunk.js.LICENSE.txt": "/healthour-pharmacy/static/js/2.bdffe81a.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/healthour-pharmacy/static/media/GenSenRounded-R.4d8dac3f.ttc",
     "static/media/slick-theme.css": "/healthour-pharmacy/static/media/slick.c94f7671.ttf"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.aa4b1c50.js",
     "static/css/2.048a98fc.chunk.css",
     "static/js/2.bdffe81a.chunk.js",
-    "static/css/main.0cd5d005.chunk.css",
+    "static/css/main.2488a347.chunk.css",
     "static/js/main.32c8164b.chunk.js"
   ]
 }
