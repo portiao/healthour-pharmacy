@@ -3,8 +3,7 @@ My React App website
 
 * 資策會（資展國際） 畢業專題製作  
 * 主題：健康藥局(Healthour)  
-* 負責：網站主視覺、Logo繪製  
-* 負責頁面：首頁、門市資訊、保健百科、處方籤門市領藥 <br>
+* 負責頁面及項目：首頁、門市資訊、保健百科、處方籤門市領藥、網站主視覺、Logo <br>
 網站連結入口： https://portiao.github.io/healthour-pharmacy/
 
 ## 安裝工具  
